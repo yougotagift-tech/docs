@@ -90,7 +90,7 @@ An error is:
 <li><code>store_staff_position</code> [String]
 <li><code>store_staff_name</code> [String]
 <li><code>store_location</code> [String]
-<li><code>brand_id</code> [Integer]
+<li><code>brand_id</code> [Integer] (Optional.  Required only if merchant has multiple brands listed on YouGotaGift.com.)
 </ul>
 </td>
 </tr>
