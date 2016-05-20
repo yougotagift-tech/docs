@@ -1,4 +1,4 @@
-# YouGotaGift.com Corporate Rewards API _v0.2_
+# YouGotaGift.com Corporate Rewards API _v0.3_
 
 ![YouGotaGift.com Logo](https://yougotagift.com/static/img/yougotagift.png)
 
@@ -33,10 +33,9 @@ The YouGotaGift.com Corporate Rewards API is an HTTP API, you can call it with s
 | Parameter    | Description   |
 | ------------ | ------------- |
 | brand | Brand name.  **Required**.  Up-to-date brand names list can be found at https://yougotagift.com/gift-card-mall/all-brands/ to access other countries lists check the end of this file. |
-| country | The brand's country.  Possible values: `AE`, `LB`, `SA`, `QA`. _Optional_. Defaults to `AE`. |
+| country | The brand's country.  Possible values: `AE`, `LB`, `SA`, `QA`, `UK`, `US`. _Optional_. Defaults to `AE`. |
 | amount | Amount in AED.  **Required**. |
 | currency | Order currency.  Possible values: `AED`, `USD`, `QAR`, `SAR`, `EUR`, `GBP`.  _Optional_.  Defaults to `AED`. |
-| quantity | How many gift cards to request.  **Required**. |
 | company | The company you're sending on behalf of.  **Required**. |
 
 ##### Response
@@ -70,12 +69,10 @@ JSON document with the following format:
     [
         {"brand": "Boutique1",
         "amount": 100,
-        "quantity": 2,
         "company": "IBM"},
 
         {"brand": "Boutique1",
         "amount": 300,
-        "quantity": 1,
         "company": "IBM"}
     ]
 
@@ -110,10 +107,9 @@ JSON document with the following format:
 | Parameter    | Description   |
 | ------------ | ------------- |
 | brand | Brand name **Required** (Up-to-date brand names list can be found at https://yougotagift.com/gift-card-mall/all-brands/ to access other countries lists check the end of this file) |
-| country | The brand's country. Possible values: AE, LB, SA, QA. _Optional Default AE_ |
+| country | The brand's country. Possible values: AE, LB, SA, QA, UK, US. _Optional Default AE_ |
 | amount | Amount in AED. **Required** |
 | currency | Order currency. Possible values: AED, USD, QAR, SAR, EUR, GBP _Optional Default AED_ |
-| quantity | How many gift cards to request. **Required** |
 | company | The company you're sending on behalf of. **Required** |
 | name | The gift receiver name. **Required** |
 | email | The gift receiver email. **Required** |
@@ -149,7 +145,6 @@ JSON document with the following format:
         "amount_in_currency": 100,
         "currency": "AED",
         "country": "AE",
-        "quantity": 1,
         "name": "John Smith",
         "email": "john@example.com",
         "company": "IBM"},
@@ -159,7 +154,6 @@ JSON document with the following format:
         "amount_in_currency": 100,
         "currency": "AED",
         "country": "AE",
-        "quantity": 1,
         "name": "Jack Smith",
         "email": "jack@example.com",
         "phone": "00971501234567",
@@ -170,7 +164,6 @@ JSON document with the following format:
         "amount_in_currency": 100,
         "currency": "AED",
         "country": "AE",
-        "quantity": 1,
         "name": "Josh Smith",
         "email": "josh@example.com",
         "delivery_time": "2014-12-31 13:00:00",
