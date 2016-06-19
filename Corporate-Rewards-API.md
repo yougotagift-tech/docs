@@ -1,4 +1,4 @@
-# YouGotaGift.com Corporate Rewards API _v0.3_
+# YouGotaGift.com Corporate Rewards API _v0.4_
 
 ![YouGotaGift.com Logo](https://yougotagift.com/static/img/yougotagift.png)
 
@@ -6,7 +6,7 @@
 
 This is a documentation of the YouGotaGift.com Corporate Rewards API.
 
-### API Old Version Links
+### API Older Version Links
 
 [Version 0.3](https://github.com/YouGotaGift/docs/blob/master/corporate-rewards-API-0.3.md)
 
@@ -42,7 +42,7 @@ The YouGotaGift.com Corporate Rewards API is an HTTP API, you can call it with s
 | country | The brand's country.  Possible values: `AE`, `LB`, `SA`, `QA`, `UK`, `US`. _Optional_. Defaults to `AE`. |
 | amount | Amount in AED.  **Required**. |
 | currency | Order currency.  Possible values: `AED`, `USD`, `QAR`, `SAR`, `EUR`, `GBP`.  _Optional_.  Defaults to `AED`. |
-| company | The company you're sending on behalf of.  **Required**. |
+| company | The company you're sending on behalf of.  _Optional_. |
 
 ##### Response
 JSON document with the following format:
@@ -103,13 +103,12 @@ JSON document with the following format:
 | ------------ | ------------- |
 | brand | Brand name **Required** (Up-to-date brand names list can be found at https://yougotagift.com/gift-card-mall/all-brands/ to access other countries lists check the end of this file) |
 | country | The brand's country. Possible values: AE, LB, SA, QA, UK, US. _Optional Default AE_ |
-| amount | Amount in AED. **Required** |
+| amount | Amount in currency. **Required** |
 | currency | Order currency. Possible values: AED, USD, QAR, SAR, EUR, GBP _Optional Default AED_ |
-| company | The company you're sending on behalf of. **Required** |
+| company | The company you're sending on behalf of. |
 | name | The gift receiver name. **Required** |
 | email | The gift receiver email. **Required** |
 | phone | The gift receiver mobile phone. Should be of format +9715XXXXXXXX or 009715XXXXXXXX or 05XXXXXXXX **Required if delivering by SMS** |
-| delivery_time | The gift delivery time. Should be formatted `YYYY-MM-DD HH:MM:SS` in Dubai Time (GMT+4) **Required if not immediately** |
 | occasion  | Possible values: `birthday`, `christmas`, `teacher`, `thank you`, `congratulations`, `just because`, `wedding`, `baby`, `good luck`, `love`, `house warming`, `anniversary`, `valentine`, `mother's day`, `sorry`, `miss you`, `season's greeting`, `get well`, `encouragement`, `back to school`, `eid`, `father's day`, `graduation`, `uae national day`, `other`. _Optional_.  Defaults to `thank you`.|
 | card message | Short message to put on the cover of the card.  _Optional_.  If not set, the occasion's default message will be used, i.e. "Happy Birthday" for the "birthday" occasion.|
 | message | Message to put inside the card.  _Optional_. |
@@ -150,7 +149,7 @@ JSON document with the following format:
     Content-Type: application/json
 
     {
-        "count": 3,
+        "count": 1,
         "total_amount": 500,
         "message": "Your order has been requested successfully."
     }
