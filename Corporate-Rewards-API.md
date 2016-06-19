@@ -133,16 +133,15 @@ JSON document with the following format:
     Content-Length: 155
     Authorization: Basic aW5jZW50aXZlczppbmNlbnRpdmVz
     Content-Type: application/json
-    HEADERS = {'accept': 'application/json; version=1.4'}
+    HEADERS = {'accept': 'application/json; version=0.4'}
 
     [
         {"brand": "Boutique1",
         "amount": 100,
-        "amount_in_currency": 100,
         "currency": "AED",
         "country": "AE",
         "name": "John Smith",
-        "email": "john@example.com",
+        "email": "john@yopmail.com",
         "company": "IBM"}
     ]
 
@@ -152,7 +151,7 @@ JSON document with the following format:
 
     {
         "count": 1,
-        "total_amount": 500,
+        "total_amount": 100,
         "message": "Your order has been requested successfully."
     }
 
