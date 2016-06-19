@@ -6,6 +6,11 @@
 
 This is a documentation of the YouGotaGift.com Corporate Rewards API.
 
+### API Old Version Links
+
+![Old Version 2](https://github.com/YouGotaGift/docs/blob/master/corporate-rewards-API-0.3.md)
+![Old Version 1](https://github.com/YouGotaGift/docs/blob/master/corporate-rewards-API-0.2.md)
+
 ### How It Works
 
 The YouGotaGift.com Corporate Rewards API is an HTTP API, you can call it with simple HTTP GET/POST, and the result will be in JSON.
@@ -48,12 +53,7 @@ JSON document with the following format:
         pdf_link: "https://yougotagift.com/corporate/download-request/XXX/pdf/",
         excel_link: "https://yougotagift.com/corporate/download-request/XXX/excel/",
         gifts_json: [
-            {amount: XXX, currency: "XXX", amount_in_currency: XXX, code: "XXXXXXXXXXXXX", brand: "", expiry_date: "XXXX-XX-XX", extra_fields: ""},
-            {amount: XXX, currency: "XXX", amount_in_currency: XXX, code: "XXXXXXXXXXXXX", brand: "", expiry_date: "XXXX-XX-XX", extra_fields: ""},
-            {amount: XXX, currency: "XXX", amount_in_currency: XXX, code: "XXXXXXXXXXXXX", brand: "", expiry_date: "XXXX-XX-XX", extra_fields: ""},
-            {amount: XXX, currency: "XXX", amount_in_currency: XXX, code: "XXXXXXXXXXXXX", brand: "", expiry_date: "XXXX-XX-XX", extra_fields: ""},
-            {amount: XXX, currency: "XXX", amount_in_currency: XXX, code: "XXXXXXXXXXXXX", brand: "", expiry_date: "XXXX-XX-XX", extra_fields: ""},
-            ....
+            {amount: XXX, currency: "XXX", amount_in_currency: XXX, code: "XXXXXXXXXXXXX", brand: "", expiry_date: "XXXX-XX-XX", extra_fields: ""}
         ]
     }
 
@@ -70,10 +70,6 @@ JSON document with the following format:
         {"brand": "Boutique1",
         "amount": 100,
         "company": "IBM"},
-
-        {"brand": "Boutique1",
-        "amount": 300,
-        "company": "IBM"}
     ]
 
 
@@ -88,9 +84,7 @@ JSON document with the following format:
         "message": "Your order has been requested successfully.",
 
         "gifts_json": [
-            {"amount": 100, "code": "3275493941216", "brand": "Boutique1", "country": "AE", "expiry_date": "2015-08-03", "extra_fields": ""},
-            {"amount": 100, "code": "3445626927886", "brand": "Boutique1", "country": "AE", "expiry_date": "2015-08-03", "extra_fields": ""},
-            {"amount": 300, "code": "4520200458846", "brand": "Boutique1", "country": "AE", "expiry_date": "2015-08-03", "extra_fields": ""}
+            {"amount": 100, "code": "3275493941216", "brand": "Boutique1", "country": "AE", "expiry_date": "2015-08-03", "extra_fields": ""}
         ]
     }
 
@@ -147,26 +141,6 @@ JSON document with the following format:
         "country": "AE",
         "name": "John Smith",
         "email": "john@example.com",
-        "company": "IBM"},
-
-        {"brand": "Boutique1",
-        "amount": 300,
-        "amount_in_currency": 100,
-        "currency": "AED",
-        "country": "AE",
-        "name": "Jack Smith",
-        "email": "jack@example.com",
-        "phone": "00971501234567",
-        "company": "IBM"},
-
-        {"brand": "Boutique1",
-        "amount": 300,
-        "amount_in_currency": 100,
-        "currency": "AED",
-        "country": "AE",
-        "name": "Josh Smith",
-        "email": "josh@example.com",
-        "delivery_time": "2014-12-31 13:00:00",
         "company": "IBM"}
     ]
 
