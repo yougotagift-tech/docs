@@ -66,6 +66,7 @@ JSON document with the following format:
     Content-Length: 155
     Authorization: Basic aW5jZW50aXZlczppbmNlbnRpdmVz
     Content-Type: application/json
+    HEADERS = {'accept': 'application/json; version=1.4'}
 
     [
         {"brand": "Boutique1",
@@ -132,6 +133,7 @@ JSON document with the following format:
     Content-Length: 155
     Authorization: Basic aW5jZW50aXZlczppbmNlbnRpdmVz
     Content-Type: application/json
+    HEADERS = {'accept': 'application/json; version=1.4'}
 
     [
         {"brand": "Boutique1",
