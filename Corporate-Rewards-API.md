@@ -78,7 +78,7 @@ JSON document with the following format:
     Content-Type: application/json
 
     {
-        "count": 3,
+        "count": 1,
         "total_amount": 500,
         "pdf_link": "https://yougotagift.com/corporate/download-request/42/pdf/",
         "excel_link": "https://yougotagift.com/corporate/download-request/42/excel/",
