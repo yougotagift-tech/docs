@@ -13,8 +13,8 @@ This is a documentation of the YouGotaGift.com Corporate Rewards API.
 The goal of RestAPI v1 is to support global gifts which requires to remove extra details.
 
 ### Summary of changes
-* Removed "quantity" since we api is to create one gift at a time.
-* 
+* Removed "quantity" since the objective of api is to create one gift at a time.
+
 ### How It Works
 
 The YouGotaGift.com Corporate Rewards API is an HTTP API, you can call it with simple HTTP GET/POST, and the result will be in JSON.
