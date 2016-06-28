@@ -7,7 +7,7 @@
 This is a documentation of the YouGotaGift.com Corporate Rewards API.
 
 ### API Latest Version Link
-[Latest Version](https://github.com/YouGotaGift/docs/blob/master/Corporate-Rewards-API.md)
+[Latest Version](https://github.com/YouGotaGift/docs/blob/master/Corporate-Rewards-API-v1.0.md)
 
 ### Changes
 The goal of RestAPI v1 is to support global gifts which requires to remove extra details.
