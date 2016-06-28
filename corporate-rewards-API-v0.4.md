@@ -13,7 +13,7 @@ This is a documentation of the YouGotaGift.com Corporate Rewards API.
 [Version 0.2](https://github.com/YouGotaGift/docs/blob/master/corporate-rewards-API-0.2.md)
 
 ### Changes
-The goal of RestAPI v1 is to support global gifts which requires additional details for redemption.
+The goal of RestAPI v1 is to support global gifts which requires "redemption_details" for redemption.
 
 ### Summary of changes
 * "redemption_details" has been introduced to provide all the important details required to redeem a specific gift.
