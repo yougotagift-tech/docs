@@ -70,8 +70,9 @@ JSON document with the following format:
               redemption_details: "XXXXX XXXXX XXXXX XXXXX XXXXX",
               gift_pdf_link: 'https://yougotagift.com/gifts/11111/XXXXXXXXXXXXXX/pdf/',
               gift_voucher: {
-                  code: XXXXXXXXXXXXX
-                  url: "http:XXXXX.com"
+                  code: XXXXXXXXXXXXX,
+                  url: "http:XXXXX.com",
+                  pin: XXX
                 },
             },
         ]
@@ -108,10 +109,10 @@ JSON document with the following format:
               "country": "AE", 
               "expiry_date": "2015-08-03",
               "extra_fields": ""
-              redemption_details: "XXXXX XXXXX XXXXX XXXXX XXXXX",
-              gift_pdf_link: 'https://yougotagift.com/gifts/11111/XXXXXXXXXXXXXX/pdf/',
-              gift_voucher: {
-                  code: 3275493941216
+              "redemption_details": "XXXXX XXXXX XXXXX XXXXX XXXXX",
+              "gift_pdf_link": 'https://yougotagift.com/gifts/11111/XXXXXXXXXXXXXX/pdf/',
+              "gift_voucher": {
+                  "code": 3275493941216
                 }
             },
         ]
