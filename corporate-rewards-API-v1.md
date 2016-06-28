@@ -68,10 +68,11 @@ JSON document with the following format:
               "XXXX-XX-XX",
               extra_fields: "",
               redemption_details: "XXXXX XXXXX XXXXX XXXXX XXXXX",
+              gift_pdf_link: 'https://yougotagift.com/gifts/116205/fXBPoVBnz-Js367zAdCMJL39MU9aefhDJ/pdf/',
               gift_voucher: {
                   code: XXXXXXXXXXXXX
                   url: "http:XXXXX.com"
-                }
+                },
             },
         ]
     }
@@ -108,6 +109,7 @@ JSON document with the following format:
               "expiry_date": "2015-08-03",
               "extra_fields": ""
               redemption_details: "XXXXX XXXXX XXXXX XXXXX XXXXX",
+              gift_pdf_link: 'https://yougotagift.com/gifts/116205/fXBPoVBnz-Js367zAdCMJL39MU9aefhDJ/pdf/',
               gift_voucher: {
                   code: 3275493941216
                 }
@@ -170,10 +172,6 @@ JSON document with the following format:
           "name": "John Smith",
           "email": "john@example.com",
           "company": "IBM"
-          redemption_details: "XXXXX XXXXX XXXXX XXXXX XXXXX",
-              gift_voucher: {
-                  code: 3275493941216
-                }
           }
     ]
 
