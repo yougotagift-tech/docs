@@ -8,7 +8,9 @@ This is a documentation of the YouGotaGift.com Corporate Rewards API.
 
 ### API Older Version Link
 [Version 0.4](https://github.com/YouGotaGift/docs/blob/master/Corporate-Rewards-API.md)
+
 [Version 0.3](https://github.com/YouGotaGift/docs/blob/master/corporate-rewards-API-0.3.md)
+
 [Version 0.2](https://github.com/YouGotaGift/docs/blob/master/corporate-rewards-API-0.2.md)
 
 ### Changes
