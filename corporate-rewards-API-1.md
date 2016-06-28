@@ -1,4 +1,4 @@
-# YouGotaGift.com Corporate Rewards API _v0.3_
+# YouGotaGift.com Corporate Rewards API _v1_
 
 ![YouGotaGift.com Logo](https://yougotagift.com/static/img/yougotagift.png)
 
@@ -12,14 +12,12 @@ This is a documentation of the YouGotaGift.com Corporate Rewards API.
 [Version 0.2](https://github.com/YouGotaGift/docs/blob/master/corporate-rewards-API-0.2.md)
 
 ### Changes
-The goal of RestAPI v1 is to support global gifts and incentive programs in localized currencies and languages
+The goal of RestAPI v1 is to support global gifts which requires additional details for redemption. Eg: Code, Redemption URL, PIN etc..
 
 ### Summary of changes
-Get Gift Catalog Method Changes
-* Removed pdf_link because gift_pdf_link is already there to get the pdf.
-* Removed excel_link because there were limited details in excel.
-* Moved code into gift_voucher because it was confusing before to clear that these data would use for gift redemtpion
-* Added url inside gift_voucher is the new  field that depends on brands policy and use for redemption
+* Removed "pdf_link" since "gift_pdf_link" has been introduced in 0.4 to provide an direct gift pdf download link.
+* Removed "excel_link" since we see its not something anyone ever requires. Might introduce later when the need arises.
+* "gift_voucher" has been introduced to provide all the important details required to redeem a gift in a single field.
 
 ### How It Works
 
