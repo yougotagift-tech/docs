@@ -7,7 +7,7 @@
 This is a documentation of the YouGotaGift.com Corporate Rewards API.
 
 ### API Older Version Link
-[Version 0.4](https://github.com/YouGotaGift/docs/blob/master/Corporate-Rewards-API.md)
+[Version 0.4](https://github.com/YouGotaGift/docs/blob/master/Corporate-Rewards-API-v0.4.md)
 
 [Version 0.3](https://github.com/YouGotaGift/docs/blob/master/corporate-rewards-API-0.3.md)
 
@@ -18,7 +18,7 @@ The goal of RestAPI v1 is to support global gifts which requires additional deta
 
 ### Summary of changes
 * Removed "pdf_link" since "gift_pdf_link" has been introduced in 0.4 to provide an direct gift pdf download link.
-* Removed "excel_link" since we see its not something anyone ever requires. Might introduce later when the need arises.
+* Removed "excel_link" since this functionality is currently not used by any user. Might introduce later when the need arises.
 * "gift_voucher" has been introduced to provide all the important details required to redeem a gift in a single field.
 
 ### How It Works
