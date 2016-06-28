@@ -1,4 +1,4 @@
-# YouGotaGift.com Corporate Rewards API _v1_
+# YouGotaGift.com Corporate Rewards API _v1.0_
 
 ![YouGotaGift.com Logo](https://yougotagift.com/static/img/yougotagift.png)
 
