@@ -6,6 +6,10 @@
 
 This is a documentation of the YouGotaGift.com Corporate Rewards API.
 
+### API Latest Version Link
+
+[Latest Version](https://github.com/YouGotaGift/docs/blob/master/corporate-rewards-API.md)
+
 ### How It Works
 
 The YouGotaGift.com Corporate Rewards API is an HTTP API, you can call it with simple HTTP GET/POST, and the result will be in JSON.
