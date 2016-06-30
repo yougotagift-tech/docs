@@ -6,7 +6,7 @@
 
 This is a documentation of the YouGotaGift.com Corporate Rewards API.
 
-### API Latest Version Links
+### API Latest Version Link
 
 [Latest Version](https://github.com/YouGotaGift/docs/blob/master/corporate-rewards-API.md)
 
