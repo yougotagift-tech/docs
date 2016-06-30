@@ -17,7 +17,7 @@ This is a documentation of the YouGotaGift.com Corporate Rewards API.
 [Version 0.2](https://github.com/YouGotaGift/docs/blob/master/corporate-rewards-API-0.2.md)
 
 ### Changes
-The goal of RestAPI v0.4 is to support global gifts which requires "redemption_details" for redemption.
+Provided a new field "redemption_details" which will provide redemption details of the ordered gifts to support the brands whose redemption details keeps on changing.
 
 ### How It Works
 
@@ -83,7 +83,7 @@ JSON document with the following format:
     Content-Length: 155
     Authorization: Basic aW5jZW50aXZlczppbmNlbnRpdmVz
     Content-Type: application/json
-    HEADERS = {'accept': 'application/json; version=1.4'}
+    HEADERS = {'accept': 'application/json; version=0.4'}
 
     [
         {"brand": "Boutique1",
