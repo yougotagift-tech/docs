@@ -17,7 +17,9 @@ This is a documentation of the YouGotaGift.com Corporate Rewards API.
 [Version 0.2](https://github.com/YouGotaGift/docs/blob/master/corporate-rewards-API-0.2.md)
 
 ### Changes
-Provided a new field "redemption_details" which will provide redemption details of the ordered gifts to support the brands whose redemption details keeps on changing.
+Provided a new field "redemption_details" which will return redemption details of the ordered gift, Its being introduced to support the brands whose redemption details are dynamic.
+
+"gift_pdf_link" : A direct gift pdf download link has been provided 
 
 ### How It Works
 
