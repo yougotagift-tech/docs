@@ -14,12 +14,12 @@ This is a documentation of the YouGotaGift.com Corporate Rewards API.
 [Version 0.2](https://github.com/YouGotaGift/docs/blob/master/corporate-rewards-API-0.2.md)
 
 ### Changes
-The goal of RestAPI v1 is to support global gifts which requires additional details for redemption. Eg: Code, Redemption URL, PIN etc..
+Added support for international brands which requires additional details for redemption. Eg: Code, Redemption URL, PIN etc..
 
 ### Summary of changes
-* Removed "pdf_link" since "gift_pdf_link" has been introduced in 0.4 to provide an direct gift pdf download link.
+* Removed "code" , instead introduced "gift_voucher" which provides all the important gift card details eg: code, redemption url, Pin etc..  
+* Removed "pdf_link" since "gift_pdf_link" has been introduced in 0.4 to provide a direct gift pdf download link.
 * Removed "excel_link" since this functionality is currently not used by any user. Might introduce later when the need arises.
-* "gift_voucher" has been introduced to provide all the important details required to redeem a gift in a single field.
 
 ### How It Works
 
@@ -50,8 +50,7 @@ The YouGotaGift.com Corporate Rewards API is an HTTP API, you can call it with s
 | brand | Brand name.  **Required**.  Up-to-date brand names list can be found at https://yougotagift.com/gift-card-mall/all-brands/ to access other countries lists check the end of this file. |
 | country | The brand's country.  Possible values: `AE`, `LB`, `SA`, `QA`, `UK`, `US`. _Optional_. Defaults to `AE`. |
 | amount | Amount in AED.  **Required**. |
-| currency | Order currency.  Possible values: `AED`, `USD`, `QAR`, `SAR`, `EUR`, `GBP`.  _Optional_.  Defaults to `AED`. |
-| company | The company you're sending on behalf of.  **Required**. |
+| currency | Order currency.  Possible values: `AED`, `USD`, `QAR`, `SAR`, `EUR`, `GBP`, `BHD`.  _Optional_.  Defaults to `AED`. |
 
 ##### Response
 JSON document with the following format:
@@ -87,7 +86,8 @@ JSON document with the following format:
     Connection: keep-alive
     Content-Length: 155
     Authorization: Basic aW5jZW50aXZlczppbmNlbnRpdmVz
-    Content-Type: application/json
+    Accept: application/json
+    Accept: version=1.0
 
     [
         {"brand": "Boutique1",
@@ -134,13 +134,12 @@ JSON document with the following format:
 | ------------ | ------------- |
 | brand | Brand name **Required** (Up-to-date brand names list can be found at https://yougotagift.com/gift-card-mall/all-brands/ to access other countries lists check the end of this file) |
 | country | The brand's country. Possible values: AE, LB, SA, QA, UK, US. _Optional Default AE_ |
-| amount | Amount in AED. **Required** |
+| amount | Amount in the given currency. **Required** |
 | currency | Order currency. Possible values: AED, USD, QAR, SAR, EUR, GBP _Optional Default AED_ |
-| company | The company you're sending on behalf of. **Required** |
+| company | The company you're sending on behalf of. _Optional |
 | name | The gift receiver name. **Required** |
 | email | The gift receiver email. **Required** |
 | phone | The gift receiver mobile phone. Should be of format +9715XXXXXXXX or 009715XXXXXXXX or 05XXXXXXXX **Required if delivering by SMS** |
-| delivery_time | The gift delivery time. Should be formatted `YYYY-MM-DD HH:MM:SS` in Dubai Time (GMT+4) **Required if not immediately** |
 | occasion  | Possible values: `birthday`, `christmas`, `teacher`, `thank you`, `congratulations`, `just because`, `wedding`, `baby`, `good luck`, `love`, `house warming`, `anniversary`, `valentine`, `mother's day`, `sorry`, `miss you`, `season's greeting`, `get well`, `encouragement`, `back to school`, `eid`, `father's day`, `graduation`, `uae national day`, `other`. _Optional_.  Defaults to `thank you`.|
 | card message | Short message to put on the cover of the card.  _Optional_.  If not set, the occasion's default message will be used, i.e. "Happy Birthday" for the "birthday" occasion.|
 | message | Message to put inside the card.  _Optional_. |
@@ -163,7 +162,8 @@ JSON document with the following format:
     Connection: keep-alive
     Content-Length: 155
     Authorization: Basic aW5jZW50aXZlczppbmNlbnRpdmVz
-    Content-Type: application/json
+    Accept: application/json
+    Accept: version=1.0
 
     [
         {
