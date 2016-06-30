@@ -9,6 +9,9 @@ This is a documentation of the YouGotaGift.com Corporate Rewards API.
 ### API Latest Version Link
 [Latest Version](https://github.com/YouGotaGift/docs/blob/master/Corporate-Rewards-API.md)
 
+### Changes
+Removed "quantity" option, since the goal of the API is to issue one Gift per order, bulk ordering is being taken care in a different method. And more than one quantity on a single request is not being supported by many newly launched brands. After analysing some more data, we came to a conclusion to remove the "quantity" option
+
 ### How It Works
 
 The YouGotaGift.com Corporate Rewards API is an HTTP API, you can call it with simple HTTP GET/POST, and the result will be in JSON.
@@ -51,12 +54,7 @@ JSON document with the following format:
         pdf_link: "https://yougotagift.com/corporate/download-request/XXX/pdf/",
         excel_link: "https://yougotagift.com/corporate/download-request/XXX/excel/",
         gifts_json: [
-            {amount: XXX, currency: "XXX", amount_in_currency: XXX, code: "XXXXXXXXXXXXX", brand: "", expiry_date: "XXXX-XX-XX", extra_fields: ""},
-            {amount: XXX, currency: "XXX", amount_in_currency: XXX, code: "XXXXXXXXXXXXX", brand: "", expiry_date: "XXXX-XX-XX", extra_fields: ""},
-            {amount: XXX, currency: "XXX", amount_in_currency: XXX, code: "XXXXXXXXXXXXX", brand: "", expiry_date: "XXXX-XX-XX", extra_fields: ""},
-            {amount: XXX, currency: "XXX", amount_in_currency: XXX, code: "XXXXXXXXXXXXX", brand: "", expiry_date: "XXXX-XX-XX", extra_fields: ""},
-            {amount: XXX, currency: "XXX", amount_in_currency: XXX, code: "XXXXXXXXXXXXX", brand: "", expiry_date: "XXXX-XX-XX", extra_fields: ""},
-            ....
+            {amount: XXX, currency: "XXX", amount_in_currency: XXX, code: "XXXXXXXXXXXXX", brand: "", expiry_date: "XXXX-XX-XX", extra_fields: ""}
         ]
     }
 
@@ -72,10 +70,6 @@ JSON document with the following format:
     [
         {"brand": "Boutique1",
         "amount": 100,
-        "company": "IBM"},
-
-        {"brand": "Boutique1",
-        "amount": 300,
         "company": "IBM"}
     ]
 
@@ -84,16 +78,14 @@ JSON document with the following format:
     Content-Type: application/json
 
     {
-        "count": 3,
+        "count": 1,
         "total_amount": 500,
         "pdf_link": "https://yougotagift.com/corporate/download-request/42/pdf/",
         "excel_link": "https://yougotagift.com/corporate/download-request/42/excel/",
         "message": "Your order has been requested successfully.",
 
         "gifts_json": [
-            {"amount": 100, "code": "3275493941216", "brand": "Boutique1", "country": "AE", "expiry_date": "2015-08-03", "extra_fields": ""},
-            {"amount": 100, "code": "3445626927886", "brand": "Boutique1", "country": "AE", "expiry_date": "2015-08-03", "extra_fields": ""},
-            {"amount": 300, "code": "4520200458846", "brand": "Boutique1", "country": "AE", "expiry_date": "2015-08-03", "extra_fields": ""}
+            {"amount": 100, "code": "3275493941216", "brand": "Boutique1", "country": "AE", "expiry_date": "2015-08-03", "extra_fields": ""}
         ]
     }
 
@@ -150,26 +142,6 @@ JSON document with the following format:
         "country": "AE",
         "name": "John Smith",
         "email": "john@example.com",
-        "company": "IBM"},
-
-        {"brand": "Boutique1",
-        "amount": 300,
-        "amount_in_currency": 100,
-        "currency": "AED",
-        "country": "AE",
-        "name": "Jack Smith",
-        "email": "jack@example.com",
-        "phone": "00971501234567",
-        "company": "IBM"},
-
-        {"brand": "Boutique1",
-        "amount": 300,
-        "amount_in_currency": 100,
-        "currency": "AED",
-        "country": "AE",
-        "name": "Josh Smith",
-        "email": "josh@example.com",
-        "delivery_time": "2014-12-31 13:00:00",
         "company": "IBM"}
     ]
 
@@ -178,7 +150,7 @@ JSON document with the following format:
     Content-Type: application/json
 
     {
-        "count": 3,
+        "count": 1,
         "total_amount": 500,
         "message": "Your order has been requested successfully."
     }
