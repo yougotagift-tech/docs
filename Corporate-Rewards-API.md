@@ -49,7 +49,7 @@ The YouGotaGift.com Corporate Rewards API is an HTTP API, you can call it with s
 | ------------ | ------------- |
 | brand | Brand name.  **Required**.  Up-to-date brand names list can be found at https://yougotagift.com/gift-card-mall/all-brands/ to access other countries lists check the end of this file. |
 | country | The brand's country.  Possible values: `AE`, `LB`, `SA`, `QA`, `UK`, `US`. _Optional_. Defaults to `AE`. |
-| amount | Amount in AED.  **Required**. |
+| amount | Amount in the given currency.  **Required**. |
 | currency | Order currency.  Possible values: `AED`, `USD`, `QAR`, `SAR`, `EUR`, `GBP`, `BHD`.  _Optional_.  Defaults to `AED`. |
 
 ##### Response
@@ -135,7 +135,7 @@ JSON document with the following format:
 | brand | Brand name **Required** (Up-to-date brand names list can be found at https://yougotagift.com/gift-card-mall/all-brands/ to access other countries lists check the end of this file) |
 | country | The brand's country. Possible values: AE, LB, SA, QA, UK, US. _Optional Default AE_ |
 | amount | Amount in the given currency. **Required** |
-| currency | Order currency. Possible values: AED, USD, QAR, SAR, EUR, GBP _Optional Default AED_ |
+| currency | Order currency. Possible values: AED, USD, QAR, SAR, EUR, GBP, BHD _Optional Default AED_ |
 | company | The company you're sending on behalf of. _Optional |
 | name | The gift receiver name. **Required** |
 | email | The gift receiver email. **Required** |
