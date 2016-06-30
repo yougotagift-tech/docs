@@ -7,13 +7,10 @@
 This is a documentation of the YouGotaGift.com Corporate Rewards API.
 
 ### API Latest Version Link
-[Latest Version](https://github.com/YouGotaGift/docs/blob/master/Corporate-Rewards-API-v1.0.md)
+[Latest Version](https://github.com/YouGotaGift/docs/blob/master/Corporate-Rewards-API.md)
 
 ### Changes
-The goal of RestAPI v1 is to support global gifts which requires to remove extra details.
-
-### Summary of changes
-* Removed "quantity" since the objective of api is to create one gift at a time.
+Removed "quantity" option, since the goal of the API is to issue one Gift per order, bulk ordering is being taken care in a different method. And more than one quantity on a single request is not being supported by many newly launched brands. After analysing some more data, we came to a conclusion to remove the "quantity" option
 
 ### How It Works
 
