@@ -60,7 +60,7 @@ JSON document with the following format:
         count: X
         total_amount: XXX
         message: "Your order has been requested successfully."
-        gifts_json: [
+        gifts_json:
             {
               amount: XXX, 
               currency: "XXX",
@@ -77,7 +77,6 @@ JSON document with the following format:
                   pin: XXX
                 },
             },
-        ]
     }
 
 #### Example Request and Response
@@ -89,11 +88,11 @@ JSON document with the following format:
     Authorization: Basic aW5jZW50aXZlczppbmNlbnRpdmVz
     Content-Type: application/json
 
-    [
-        {"brand": "Boutique1",
+    {
+        "brand": "Boutique1",
         "amount": 100,
-        "company": "IBM"},
-    ]
+        "company": "IBM"
+    }
 
 
     HTTP/1.0 200 OK
@@ -103,7 +102,7 @@ JSON document with the following format:
         "count": 1,
         "total_amount": 500,
         "message": "Your order has been requested successfully.",
-        "gifts_json": [
+        "gifts_json":
             {
               "amount": 100,
               "code": "3275493941216",
@@ -117,7 +116,6 @@ JSON document with the following format:
                   "code": 3275493941216
                 }
             },
-        ]
     }
 
 
@@ -165,7 +163,6 @@ JSON document with the following format:
     Authorization: Basic aW5jZW50aXZlczppbmNlbnRpdmVz
     Content-Type: application/json
 
-    [
         {
           "brand": "Boutique1",
           "amount": 100,
@@ -176,7 +173,6 @@ JSON document with the following format:
           "email": "john@example.com",
           "company": "IBM"
           }
-    ]
 
 
     HTTP/1.0 200 OK
