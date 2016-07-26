@@ -53,9 +53,16 @@ JSON document with the following format:
         message: "Your order has been requested successfully."
         pdf_link: "https://yougotagift.com/corporate/download-request/XXX/pdf/",
         excel_link: "https://yougotagift.com/corporate/download-request/XXX/excel/",
-        gifts_json: [
-            {amount: XXX, currency: "XXX", amount_in_currency: XXX, code: "XXXXXXXXXXXXX", brand: "", expiry_date: "XXXX-XX-XX", extra_fields: ""}
-        ]
+        gifts_json:
+        {
+            amount: XXX,
+            currency: "XXX", 
+            amount_in_currency: XXX, 
+            code: "XXXXXXXXXXXXX",
+            brand: "",
+            expiry_date: "XXXX-XX-XX",
+            extra_fields: ""
+        }
     }
 
 #### Example Request and Response
@@ -68,11 +75,11 @@ JSON document with the following format:
     Accept: application/json
     Accept: version=0.3
 
-    [
-        {"brand": "Boutique1",
+    {
+        "brand": "Boutique1",
         "amount": 100,
-        "company": "IBM"}
-    ]
+        "company": "IBM"
+    }
 
 
     HTTP/1.0 200 OK
@@ -85,9 +92,16 @@ JSON document with the following format:
         "excel_link": "https://yougotagift.com/corporate/download-request/42/excel/",
         "message": "Your order has been requested successfully.",
 
-        "gifts_json": [
-            {"amount": 100, "code": "3275493941216", "brand": "Boutique1", "country": "AE", "expiry_date": "2015-08-03", "extra_fields": ""}
-        ]
+        "gifts_json":
+        {
+            "amount": 100,
+            "code": "3275493941216",
+            "brand": "Boutique1",
+            "country": "AE", 
+            "expiry_date": 
+            "2015-08-03",
+            "extra_fields": ""
+        }
     }
 
 
@@ -136,16 +150,16 @@ JSON document with the following format:
     Accept: application/json
     Accept: version=0.3
 
-    [
-        {"brand": "Boutique1",
+    {
+        "brand": "Boutique1",
         "amount": 100,
         "amount_in_currency": 100,
         "currency": "AED",
         "country": "AE",
         "name": "John Smith",
         "email": "john@example.com",
-        "company": "IBM"}
-    ]
+        "company": "IBM"
+    }
 
 
     HTTP/1.0 200 OK
