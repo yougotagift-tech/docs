@@ -62,19 +62,17 @@ JSON document with the following format:
         message: "Your order has been requested successfully."
         pdf_link: "https://yougotagift.com/corporate/download-request/XXX/pdf/",
         excel_link: "https://yougotagift.com/corporate/download-request/XXX/excel/",
-        gifts_json: [
-            {
-              amount: XXX, 
-              currency: "XXX",
-              amount_in_currency: XXX, 
-              code: "XXXXXXXXXXXXX", 
-              brand: "", 
-              expiry_date: "XXXX-XX-XX",
-              extra_fields: ""
-              redemption_details: "XXXXX XXXXX XXXXX XXXXX XXXXX",
-              gift_pdf_link: 'https://yougotagift.com/gifts/11111/XXXXXXXXXXXXXX/pdf/',
-            }
-        ]
+        gifts_json:{
+            amount: XXX, 
+            currency: "XXX",
+            amount_in_currency: XXX, 
+            code: "XXXXXXXXXXXXX", 
+            brand: "", 
+            expiry_date: "XXXX-XX-XX",
+            extra_fields: ""
+            redemption_details: "XXXXX XXXXX XXXXX XXXXX XXXXX",
+            gift_pdf_link: 'https://yougotagift.com/gifts/11111/XXXXXXXXXXXXXX/pdf/',
+        }
     }
 
 #### Example Request and Response
@@ -87,11 +85,11 @@ JSON document with the following format:
     Content-Type: application/json
     HEADERS = {'accept': 'application/json; version=0.4'}
 
-    [
-        {"brand": "Boutique1",
+    {
+        "brand": "Boutique1",
         "amount": 100,
-        "company": "IBM"},
-    ]
+        "company": "IBM"
+    }
 
 
     HTTP/1.0 200 OK
@@ -104,18 +102,16 @@ JSON document with the following format:
         "excel_link": "https://yougotagift.com/corporate/download-request/42/excel/",
         "message": "Your order has been requested successfully.",
 
-        "gifts_json": [
-            {
-              "amount": 100, 
-              "code": "3275493941216", 
-              "brand": "Boutique1",
-              "country": "AE", 
-              "expiry_date": "2015-08-03", 
-              "extra_fields": "",
-              "redemption_details": "XXXXX XXXXX XXXXX XXXXX XXXXX",
-              "gift_pdf_link": 'https://yougotagift.com/gifts/11111/XXXXXXXXXXXXXX/pdf/',
-              }
-        ]
+        "gifts_json": {
+            "amount": 100, 
+            "code": "3275493941216", 
+            "brand": "Boutique1",
+            "country": "AE", 
+            "expiry_date": "2015-08-03", 
+            "extra_fields": "",
+                "redemption_details": "XXXXX XXXXX XXXXX XXXXX XXXXX",
+            "gift_pdf_link": 'https://yougotagift.com/gifts/11111/XXXXXXXXXXXXXX/pdf/',
+        }
     }
 
 
@@ -163,15 +159,15 @@ JSON document with the following format:
     Content-Type: application/json
     HEADERS = {'accept': 'application/json; version=0.4'}
 
-    [
-        {"brand": "Boutique1",
+    {
+        "brand": "Boutique1",
         "amount": 100,
         "currency": "AED",
         "country": "AE",
         "name": "John Smith",
         "email": "john@yopmail.com",
-        "company": "IBM"}
-    ]
+        "company": "IBM"
+    }
 
 
     HTTP/1.0 200 OK
