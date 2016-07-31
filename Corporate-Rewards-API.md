@@ -72,7 +72,11 @@ JSON document with the following format:
           'expiry_date': '2017-07-31',
           'extra_fields': '',
           'gift_pdf_link': 'https://yougotagift.com/usa/gifts/95370/1BZnu0hn-qPtTg9HcVVX2keDTm71-KlOa/pdf/',
-          'gift_voucher': {'code': 'FYAU8r', 'url': 'http://gotagift.co/hb3Bc', 'pin': XXX },
+          'gift_voucher': {
+                'code': 'FYAU8r',
+                'url': 'http://gotagift.co/hb3Bc',
+                'pin': XXX 
+            },
           'id': 95370,
           'redemption_details': 'To redeem your Walmart eGift Card, please click on the Redemption URL above and enter the above Challenge Key into the website.'
         },
@@ -112,7 +116,9 @@ JSON document with the following format:
           'expiry_date': '2017-07-31',
           'extra_fields': '',
           'gift_pdf_link': 'http://local.yougotagift.com:8000/gifts/95372/acymcSBBn3QrP4fCAz5V1ncT067JRiic/pdf/',
-          'gift_voucher': {'code': '2752843621109'},
+          'gift_voucher': {
+                'code': '2752843621109'
+            },
           'id': 95372,
           'redemption_details': 'This eGift Card is redeemable for any merchandise offered in any Virgin Megastore across the UAE.\r\nThis eGift Card is only valid for a one time purchase to the full value unless otherwise specified.'
         },
