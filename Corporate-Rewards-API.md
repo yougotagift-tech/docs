@@ -20,6 +20,9 @@ Added support for international brands which requires additional details for red
 * Removed "code" , instead introduced "gift_voucher" which provides all the important gift card details eg: code, redemption url, Pin etc..  
 * Removed "pdf_link" since "gift_pdf_link" has been introduced in 0.4 to provide a direct gift pdf download link.
 * Removed "excel_link" since this functionality is currently not used by any user. Might introduce later when the need arises.
+* Removed "total_amount" since the gift amount already holds the value
+* Removed "count" since it always returns 1 and more than one quantity is not allowed
+* "gifts_json" key returned by download endpoint has been renamed to "gift_json"
 
 ### How It Works
 
@@ -56,27 +59,25 @@ The YouGotaGift.com Corporate Rewards API is an HTTP API, you can call it with s
 JSON document with the following format:
 
     {
-        count: X
-        total_amount: XXX
-        message: "Your order has been requested successfully."
-        gifts_json: [
-            {
-              amount: XXX, 
-              currency: "XXX",
-              amount_in_currency: XXX, 
-              brand: "",
-              expiry_date:
-              "XXXX-XX-XX",
-              extra_fields: "",
-              redemption_details: "XXXXX XXXXX XXXXX XXXXX XXXXX",
-              gift_pdf_link: 'https://yougotagift.com/gifts/11111/XXXXXXXXXXXXXX/pdf/',
-              gift_voucher: {
-                  code: XXXXXXXXXXXXX,
-                  url: "http:XXXXX.com",
-                  pin: XXX
-                },
-            },
-        ]
+      'gift_json': {
+          'amount': 500,
+          'amount_in_currency': 500,
+          'barcode_image': 'https://yougotagift.com/gifts/barcode/generate/hPc7bN/',
+          'brand': 'Walmart',
+          'brand_print_image': 'https://yougotagift.com/media/images/cards/print/Walmart-print-495x318.png',
+          'brand_square_image': 'https://yougotagift.com/media/images/cards/fb/Walmart-FB-300x300.png',
+          'brand_store_image': 'https://yougotagift.com/media/images/cards/store/Walmart-262x168.jpg',
+          'country': 'US',
+          'currency': 'AED',
+          'expiry_date': '2017-07-31',
+          'extra_fields': '',
+          'gift_pdf_link': 'https://yougotagift.com/usa/gifts/95370/1BZnu0hn-qPtTg9HcVVX2keDTm71-KlOa/pdf/',
+          'gift_voucher': {'code': 'FYAU8r', 'url': 'http://gotagift.co/hb3Bc', 'pin': XXX },
+          'id': 95370,
+          'redemption_details': 'To redeem your Walmart eGift Card, please click on the Redemption URL above and enter the above Challenge Key into the website.'
+        },
+      'message': 'Your order has been requested successfully.',
+      'purchase_request_id': 13544
     }
 
 #### Example Request and Response
@@ -89,35 +90,34 @@ JSON document with the following format:
     Accept: application/json
     Accept: version=1.0
 
-    [
-        {"brand": "Boutique1",
-        "amount": 100,
-        "company": "IBM"},
-    ]
-
+    {
+       "brand" : "Virgin Megastore",                    
+        "amount" : '500',                   
+    }
 
     HTTP/1.0 200 OK
     Content-Type: application/json
 
     {
-        "count": 1,
-        "total_amount": 500,
-        "message": "Your order has been requested successfully.",
-        "gifts_json": [
-            {
-              "amount": 100,
-              "code": "3275493941216",
-              "brand": "Boutique1",
-              "country": "AE", 
-              "expiry_date": "2015-08-03",
-              "extra_fields": ""
-              "redemption_details": "XXXXX XXXXX XXXXX XXXXX XXXXX",
-              "gift_pdf_link": 'https://yougotagift.com/gifts/11111/XXXXXXXXXXXXXX/pdf/',
-              "gift_voucher": {
-                  "code": 3275493941216
-                }
-            },
-        ]
+      'gift_json': {
+          'amount': 500.0,
+          'amount_in_currency': 500.0,
+          'barcode_image': 'http://local.yougotagift.com:8000/gifts/barcode/generate/2752843621109/',
+          'brand': 'Virgin Megastore',
+          'brand_print_image': 'http://local.yougotagift.com:8000/media/images/cards/print/virgin-print_2_2.png',
+          'brand_square_image': 'http://local.yougotagift.com:8000/media/images/cards/fb/virgin-196x196_2_4.jpg',
+          'brand_store_image': 'http://local.yougotagift.com:8000/media/images/cards/store/virgin-262x168_2_2.jpg',
+          'country': 'AE',
+          'currency': 'AED',
+          'expiry_date': '2017-07-31',
+          'extra_fields': '',
+          'gift_pdf_link': 'http://local.yougotagift.com:8000/gifts/95372/acymcSBBn3QrP4fCAz5V1ncT067JRiic/pdf/',
+          'gift_voucher': {'code': '2752843621109'},
+          'id': 95372,
+          'redemption_details': 'This eGift Card is redeemable for any merchandise offered in any Virgin Megastore across the UAE.\r\nThis eGift Card is only valid for a one time purchase to the full value unless otherwise specified.'
+        },
+      'message': 'Your order has been requested successfully.',
+      'purchase_request_id': 13546
     }
 
 
@@ -150,9 +150,8 @@ _Any extra parameters will also be saved in the `extra_fields` field._
 JSON document with the following format:
 
     {
-        count: X
-        total_amount: XXX
         message: "Your order has been requested successfully."
+        purchase_request_id: 13547
     }
 
 ##### Example Request and Response
@@ -165,18 +164,16 @@ JSON document with the following format:
     Accept: application/json
     Accept: version=1.0
 
-    [
-        {
-          "brand": "Boutique1",
-          "amount": 100,
-          "amount_in_currency": 100,
-          "currency": "AED",
-          "country": "AE",
-          "name": "John Smith",
-          "email": "john@example.com",
-          "company": "IBM"
-          }
-    ]
+    {
+      "brand": "Boutique1",
+      "amount": 100,
+      "currency": "AED",
+      "country": "AE",
+      "name": "John Smith",
+      "email": "john@example.com",
+      "company": "Apoclapsy"
+    }
+  
 
 
     HTTP/1.0 200 OK
