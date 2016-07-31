@@ -92,7 +92,7 @@ JSON document with the following format:
     Content-Length: 155
     Authorization: Basic aW5jZW50aXZlczppbmNlbnRpdmVz
     Accept: application/json
-    **Accept: version=1.0**
+    Accept: version=1.0
 
     {
        "brand" : "Virgin Megastore",                    
