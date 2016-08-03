@@ -4,9 +4,9 @@
 
 ## Overview
 
-This is a documentation of the YouGotaGift.com Corporate Rewards API.
+This is a documentation of the YouGotaGift.com Corporate Rewards API 1.0
 
-### API Older Version Link
+### API Older Version Links
 [Version 0.4](https://github.com/YouGotaGift/docs/blob/master/corporate-rewards-API-v0.4.md)
 
 [Version 0.3](https://github.com/YouGotaGift/docs/blob/master/corporate-rewards-API-0.3.md)
