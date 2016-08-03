@@ -187,6 +187,7 @@ JSON document with the following format:
 The list of brands available in a given country can be retrieved from the following URLs.  The returned text document will be a newline-separated names of the different brands.
 
 - UAE (AE): https://yougotagift.com/gift-card-mall/all-brands/
+- Bahrain (BH): https://yougotagift.com/bahrain/gift-card-mall/all-brands/
 - Lebanon (LB): https://yougotagift.com/lebanon/gift-card-mall/all-brands/
 - Qatar (QA): https://yougotagift.com/qatar/gift-card-mall/all-brands/
 - Saudi (SA): https://yougotagift.com/saudi/gift-card-mall/all-brands/
