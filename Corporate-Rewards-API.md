@@ -60,15 +60,15 @@ JSON document with the following format:
 
     {
       'gift_json': {
-          'amount': 500,
-          'amount_in_currency': 500,
+          'amount': 5,
+          'amount_in_currency': 5,
           'barcode_image': 'https://yougotagift.com/gifts/barcode/generate/hPc7bN/',
           'brand': 'Walmart',
           'brand_print_image': 'https://yougotagift.com/media/images/cards/print/Walmart-print-495x318.png',
           'brand_square_image': 'https://yougotagift.com/media/images/cards/fb/Walmart-FB-300x300.png',
           'brand_store_image': 'https://yougotagift.com/media/images/cards/store/Walmart-262x168.jpg',
           'country': 'US',
-          'currency': 'AED',
+          'currency': 'USD',
           'expiry_date': '2017-07-31',
           'extra_fields': '',
           'gift_pdf_link': 'https://yougotagift.com/usa/gifts/95370/1BZnu0hn-qPtTg9HcVVX2keDTm71-KlOa/pdf/',
@@ -90,7 +90,7 @@ JSON document with the following format:
     Host: yougotagift.com
     Connection: keep-alive
     Content-Length: 155
-    Authorization: Basic aW5jZW50aXZlczppbmNlbnRpdmVz
+    Authorization: Basic Y29ycG9yYXRlLXNhbmRib3g6c2FuZGJveA==
     Accept: application/json
     Accept: version=1.0
 
@@ -104,8 +104,8 @@ JSON document with the following format:
 
     {
       'gift_json': {
-          'amount': 500.0,
-          'amount_in_currency': 500.0,
+          'amount': 50.0,
+          'amount_in_currency': 50.0,
           'barcode_image': 'http://local.yougotagift.com:8000/gifts/barcode/generate/2752843621109/',
           'brand': 'Virgin Megastore',
           'brand_print_image': 'http://local.yougotagift.com:8000/media/images/cards/print/virgin-print_2_2.png',
@@ -166,13 +166,13 @@ JSON document with the following format:
     Host: yougotagift.com
     Connection: keep-alive
     Content-Length: 155
-    Authorization: Basic aW5jZW50aXZlczppbmNlbnRpdmVz
+    Authorization: Basic Y29ycG9yYXRlLXNhbmRib3g6c2FuZGJveA==
     Accept: application/json
     Accept: version=1.0
 
     {
       "brand": "Boutique1",
-      "amount": 100,
+      "amount": 50,
       "currency": "AED",
       "country": "AE",
       "name": "John Smith",
@@ -187,7 +187,7 @@ JSON document with the following format:
 
     {
         "count": 1,
-        "total_amount": 500,
+        "total_amount": 50,
         "message": "Your order has been requested successfully."
     }
 
