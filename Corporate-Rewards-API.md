@@ -96,7 +96,7 @@ JSON document with the following format:
 
     {
        "brand" : "Virgin Megastore",                    
-        "amount" : '500',                   
+        "amount" : '50',                   
     }
 
     HTTP/1.0 200 OK
