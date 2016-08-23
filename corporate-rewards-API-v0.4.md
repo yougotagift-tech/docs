@@ -83,7 +83,7 @@ JSON document with the following format:
     Host: yougotagift.com
     Connection: keep-alive
     Content-Length: 155
-    Authorization: Basic aW5jZW50aXZlczppbmNlbnRpdmVz
+    Authorization: Basic Y29ycG9yYXRlLXNhbmRib3g6c2FuZGJveA==
     Content-Type: application/json
     HEADERS = {'accept': 'application/json; version=0.4'}
 
@@ -159,7 +159,7 @@ JSON document with the following format:
     Host: yougotagift.com
     Connection: keep-alive
     Content-Length: 155
-    Authorization: Basic aW5jZW50aXZlczppbmNlbnRpdmVz
+    Authorization: Basic Y29ycG9yYXRlLXNhbmRib3g6c2FuZGJveA==
     Content-Type: application/json
     HEADERS = {'accept': 'application/json; version=0.4'}
 
