@@ -51,7 +51,7 @@ The YouGotaGift.com Corporate Rewards API is an HTTP API, you can call it with s
 | Parameter    | Description   |
 | ------------ | ------------- |
 | brand | Brand name.  **Required**.  Up-to-date brand names list can be found at https://yougotagift.com/gift-card-mall/all-brands/ to access other countries lists check the end of this file. |
-| country | The brand's country.  Possible values: `AE`, `LB`, `SA`, `QA`, `UK`, `US`. _Optional_. Defaults to `AE`. |
+| country | The brand's country.  Possible values: `AE`, `LB`, `SA`, `QA`, `BH`, `UK`, `US`. _Optional_. Defaults to `AE`. |
 | amount | Amount in the given currency.  **Required**. |
 | currency | Order currency.  Possible values: `AED`, `USD`, `QAR`, `SAR`, `EUR`, `GBP`, `BHD`.  _Optional_.  Defaults to `AED`. |
 
@@ -73,8 +73,8 @@ JSON document with the following format:
           'extra_fields': '',
           'gift_pdf_link': 'https://yougotagift.com/usa/gifts/95370/1BZnu0hn-qPtTg9HcVVX2keDTm71-KlOa/pdf/',
           'gift_voucher': {
-                'code': 'FYAU8r',
-                'url': 'http://gotagift.co/hb3Bc',
+                'code': XXXX,
+                'url': 'http://gotagift.co/XXXX',
                 'pin': XXX 
             },
           'id': 95370,
@@ -106,18 +106,18 @@ JSON document with the following format:
       'gift_json': {
           'amount': 50.0,
           'amount_in_currency': 50.0,
-          'barcode_image': 'http://local.yougotagift.com:8000/gifts/barcode/generate/2752843621109/',
+          'barcode_image': 'https://yougotagift.com/gifts/barcode/generate/XXXXXXXXXX/',
           'brand': 'Virgin Megastore',
-          'brand_print_image': 'http://local.yougotagift.com:8000/media/images/cards/print/virgin-print_2_2.png',
-          'brand_square_image': 'http://local.yougotagift.com:8000/media/images/cards/fb/virgin-196x196_2_4.jpg',
-          'brand_store_image': 'http://local.yougotagift.com:8000/media/images/cards/store/virgin-262x168_2_2.jpg',
+          'brand_print_image': 'https://yougotagift.com/media/images/cards/print/virgin-print_2_2.png',
+          'brand_square_image': 'https://yougotagift.com/media/images/cards/fb/virgin-196x196_2_4.jpg',
+          'brand_store_image': 'https://yougotagift.com/media/images/cards/store/virgin-262x168_2_2.jpg',
           'country': 'AE',
           'currency': 'AED',
           'expiry_date': '2017-07-31',
           'extra_fields': '',
-          'gift_pdf_link': 'http://local.yougotagift.com:8000/gifts/95372/acymcSBBn3QrP4fCAz5V1ncT067JRiic/pdf/',
+          'gift_pdf_link': 'https://yougotagift.com/gifts/XXXXX/acymcSBBn3QrP4fCAz5V1ncT067JRiic/pdf/',
           'gift_voucher': {
-                'code': '2752843621109'
+                'code': 'XXXXXXXXXX'
             },
           'id': 95372,
           'redemption_details': 'This eGift Card is redeemable for any merchandise offered in any Virgin Megastore across the UAE.\r\nThis eGift Card is only valid for a one time purchase to the full value unless otherwise specified.'
@@ -139,7 +139,7 @@ JSON document with the following format:
 | Parameter    | Description   |
 | ------------ | ------------- |
 | brand | Brand name **Required** (Up-to-date brand names list can be found at https://yougotagift.com/gift-card-mall/all-brands/ to access other countries lists check the end of this file) |
-| country | The brand's country. Possible values: AE, LB, SA, QA, UK, US. _Optional Default AE_ |
+| country | The brand's country. Possible values: AE, LB, SA, QA, BH, UK, US. _Optional Default AE_ |
 | amount | Amount in the given currency. **Required** |
 | currency | Order currency. Possible values: AED, USD, QAR, SAR, EUR, GBP, BHD _Optional Default AED_ |
 | company | The company you're sending on behalf of. _Optional |
@@ -166,7 +166,7 @@ JSON document with the following format:
     Host: yougotagift.com
     Connection: keep-alive
     Content-Length: 155
-    Authorization: Basic Y29ycG9yYXRlLXNhbmRib3g6c2FuZGJveA==
+    Authorization: Basic XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
     Accept: application/json
     Accept: version=1.0
 
