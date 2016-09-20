@@ -202,3 +202,31 @@ The list of brands available in a given country can be retrieved from the follow
 - USA (US): https://yougotagift.com/usa/gift-card-mall/all-brands/
 - United Kingdom (UK): https://yougotagift.com/uk/gift-card-mall/all-brands/
 
+#### `Brands Catalog API Endpoints`
+- **Endpoint** `https://yougotagift.com/corporate/api/v1/`.
+- **Returns** JSON list which contains list of Brands Catalog API endpoints .
+- **Request method**  `GET`.
+- **Request format**  Should be an HTTP GET.
+- **Requires Authentication**
+
+
+
+
+#### `countries`
+- **Endpoint** `https://yougotagift.com/corporate/api/countries/`.
+- **Returns** JSON document with the result of the request.
+- **Request method**  `GET`.
+- **Request format**  Should be an HTTP GET.
+- **Requires Authentication**
+
+##### Country Object
+
+| Attribute    | Description   |
+| ------------ | ------------- |
+| name | Brand name **Required** (Up-to-date brand names list can be found at https://yougotagift.com/gift-card-mall/all-brands/ to access other countries lists check the end of this file) |
+| code | The brand's country. Possible values: AE, LB, SA, QA, BH, UK, US. _Optional Default AE_ |
+| currency | Amount in the given currency. **Required** |
+| timezone | Order currency. Possible values: AED, USD, QAR, SAR, EUR, GBP, BHD _Optional Default AED_ |
+| detail_url | The company you're sending on behalf of. _Optional |
+
+
