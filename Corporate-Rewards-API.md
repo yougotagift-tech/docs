@@ -264,6 +264,150 @@ The list of brands available in a given country can be retrieved from the follow
 	}
 
 
+#### `brands`
+- **Endpoint** `https://yougotagift.com/corporate/api/v1/brands/`.
+- **Returns** JSON document with the result of the request.
+- **Request method**  `GET`.
+- **Request format**  Should be an HTTP GET.
+- **Requires Authentication**
+
+
+
+##### Example Request and Response
+
+    GET /corporate/api/v1/brands/ HTTP/1.1
+	Accept: application/json
+	Authorization: Basic "Your Corporate Authentication"
+
+	It will list all active brand with paginated results (default 20 brands per page),
+
+	For country specific brands pass country parameter in url with country code
+
+	Example: /corporate/api/v1/brands/?country=AE
+
+
+    HTTP 200 OK
+    Content-Type: application/json
+
+    {
+	    "count": 162,
+	    "next": "https://yougotagift.com/corporate/api/v1/brands/?page=2",
+	    "previous": null,
+	    "brands": [
+	        {
+	            "id": 26,
+	            "brand_code": "1847",
+	            "name": "1847",
+	            "logo": "https://yougotagift.com/media/images/cards/fb/1847-FB-196x196.jpg",
+	            "product_image": "https://yougotagift.com/media/images/cards/mail/1847-372x238.jpg",
+	            "country": {
+	                "name": "UAE",
+	                "code": "AE"
+	            },
+	            "validity_in_months": 12,
+	            "variable_amount": true,
+	            "denominations": {
+	                "LBP": {
+	                    "min": 75000,
+	                    "max": 3000000
+	                },
+	                "USD": {
+	                    "min": 15,
+	                    "max": 2700
+	                },
+	                "QAR": {
+	                    "min": 50,
+	                    "max": 10000
+	                },
+	                "BHD": {
+	                    "min": 5,
+	                    "max": 1120
+	                },
+	                "AED": {
+	                    "min": 50,
+	                    "max": 100000
+	                },
+	                "GBP": {
+	                    "min": 10,
+	                    "max": 1700
+	                },
+	                "SAR": {
+	                    "min": 50,
+	                    "max": 10000
+	                },
+	                "EUR": {
+	                    "min": 10,
+	                    "max": 2200
+	                }
+	            },
+	            "tagline": "Executive grooming for men",
+	            "description": "Where are all the luxury facilities and treatments for men? They are all at the Grooming Company’s 1847 in Dubai, exclusively for men to get away and relax! Men will go through an experience which starts with unwinding in the signature Chill Out Lounge with custom made Italian leather chairs, followed by selecting a channel or DVD of their choice while enjoying several treatments, massages, and even a facial!<!--more-->\r\n\r\nMen love good grooming just as much as women, so why not get them an 1847 eGift Card?! Give the man of your choice an experience they will never forget. First, they will enter the signature “Chill Out” Lounge, where they can select from different sports and news channels on the 42 inch plasma screen.  They can also choose from a range of gourmet sandwiches and drinks.\r\n\r\nNext, they can enjoy a selection of different treatments this modern day barber shop has to offer. Your loved one can have a manicure pedicure as well as a range of massages such as the Well Being Massage, Ancient Thai Massage, Reflexology, or 1847’s signature “Four Hands” massage.\r\n\r\nLast but not least, men can use their eGift Card to purchase products from “The Mint” boutique where they can choose from a range of skin care items, shaving kits, and hair treatments. When it comes to male pampering, choose the 1847 gift card.",
+	            "image_gallery": [
+	                {
+	                    "image": "https://yougotagift.com/media/images/cards/gallery/2pmq2WHMZ0oaJIlTwaIHpQ.jpg"
+	                },
+	                {
+	                    "image": "https://yougotagift.com/media/images/cards/gallery/10g7Kv4tV9Jo1OzUO_FhuF.jpg"
+	                },
+	                {
+	                    "image": "https://yougotagift.com/media/images/cards/gallery/1hj4Rmt7J9cpu_poxVeFEi.jpg"
+	                },
+	                {
+	                    "image": "https://yougotagift.com/media/images/cards/gallery/1jFwM5hrp6hatV7uva7q-p.jpg"
+	                },
+	                {
+	                    "image": "https://yougotagift.com/media/images/cards/gallery/3cP1ssTYB9to73qV1t1jGT.jpg"
+	                },
+	                {
+	                    "image": "https://yougotagift.com/media/images/cards/gallery/1l3FvnCoZdmGyzxyE2OOG-.jpg"
+	                }
+	            ],
+	            "redemption_type": "Redeem at Store",
+	            "redemption_instruction": "This eGift Card is redeemable for any service offered in any 1847 branch across the UAE.\r\nThis eGift Card is only valid for a one time purchase to the full value unless otherwise specified.",
+	            "detail_url": "https://yougotagift.com/corporate/api/v1/brands/26/"
+	        },
+	        {
+	            "id": 117,
+	            "brand_code": "ABC",
+	            "name": "ABC",
+	            "logo": "https://yougotagift.com/media/images/cards/fb/ABC-FB-300x300.png",
+	            "product_image": "https://yougotagift.com/media/images/cards/mail/ABC-372x238.jpg",
+	            "country": {
+	                "name": "Lebanon",
+	                "code": "LB"
+	            },
+	            "validity_in_months": 12,
+	            "variable_amount": false,
+	            "denominations": {
+	                "LBP": [
+	                    75000,
+	                    100000,
+	                    150000,
+	                    225000,
+	                    300000,
+	                    750000,
+	                    1500000
+	                ]
+	            },
+	            "tagline": "My gift your choice",
+	            "description": "Want to spoil your loved ones with the ultimate gift of choice? Welcome to ABC, home of all that is vibrant, stylish, new and exciting! ABC is the most prominent mall in Lebanon that offers a unique shopping, dining, leisure and entertainment experience like no other. ABC provides a multitude of top store options to choose from in fashion, beauty, electronics, home décor, food shopping and more! \r\n\r\nAs Lebanon’s premier shopping and lifestyle destination, ABC is still first and as committed as ever to upholding the tradition of excellence that has made it what it is today. With six branches, including two flagship stores that combine world-class shopping, dining and entertainment, this dynamic retailer is perpetually reinventing the ultimate leisure experience. From Zara to H&M, M2 Multimedia Megastore to The Body Shop and ABC Grand Cinemas, your loved ones are bound to find the perfect gift!\r\n\r\nThis Gift Card is ideal for those who are hard to shop for and perfect for when you just want to surprise a loved one to purchase what they really want, as it takes the guess work out of gift shopping! Who wouldn't be happy to go on a shopping spree?\r\n\r\nYou can even customize your Gift Card to make it extra special with a greeting, message and photo! So whether you are looking to gift a loved one on their birthday, for a house warming, graduation, or just looking to say “thank-you,” they will surely appreciate an ABC Gift Card!",
+	            "image_gallery": [
+	                {
+	                    "image": "https://yougotagift.com/media/images/cards/gallery/26txWWbCpeephNKuE1jsib.jpg"
+	                },
+	                {
+	                    "image": "https://yougotagift.com/media/images/cards/gallery/3fzDLrxIxadWoBwExCq6EH.jpg"
+	                }
+	            ],
+	            "redemption_type": "Redeem at Store",
+	            "redemption_instruction": "This eGift Card is redeemable for any merchandise offered in ABC outlets across Lebanon.\r\nThis eGift Card is only valid for a one time purchase to the full value unless otherwise specified\r\n",
+	            "detail_url": "https://yougotagift.com/corporate/api/v1/brands/117/"
+	        },
+	        
+	    ]
+	}
+
+	Atrribute "variable_amount" is used to diffrenciate the denominations, if it returns True then denominations field will contains variable amounts in diiferent currencies with min and max amount otherwise denominations will be fixed amount.
 
 
 
