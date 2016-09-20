@@ -192,7 +192,7 @@ JSON document with the following format:
     }
 
 
-#### `Brands Catalog API Endpoints`
+#### `Brands Catalog REST API `
 - **Endpoint** `https://yougotagift.com/corporate/api/v1/`.
 - **Returns** JSON list of brands catalog API endpoints.
 - **Request method**  `GET`.
@@ -202,7 +202,9 @@ JSON document with the following format:
 
 ##### Example Request and Response
 
-	GET /corporate/api/v1/
+    GET /corporate/api/v1/  HTTP/1.1
+	Accept: application/json
+	Authorization: Basic "Your Corporate Authentication"
 
     HTTP/1.0 200 OK
     Content-Type: application/json
