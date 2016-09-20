@@ -201,3 +201,4 @@ The list of brands available in a given country can be retrieved from the follow
 - Saudi (SA): https://yougotagift.com/saudi/gift-card-mall/all-brands/
 - USA (US): https://yougotagift.com/usa/gift-card-mall/all-brands/
 - United Kingdom (UK): https://yougotagift.com/uk/gift-card-mall/all-brands/
+
