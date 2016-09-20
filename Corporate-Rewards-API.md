@@ -220,13 +220,16 @@ The list of brands available in a given country can be retrieved from the follow
 
 ##### Country Object
 
+
 | Attribute    | Description   |
 | ------------ | ------------- |
 | name | Country name  |
 | code | Two letter country code Example: AE, LB, SA |
-| currency: | Amount in the given currency. **Required** |
+| currency:
+        name | name of the currency 
+        code | Two letter currency code
 | timezone | Country timezone
-| detail_url | Endpoint url for specific country details |
+| detail_url | Endpoint url for specific country. |
 
 
 
