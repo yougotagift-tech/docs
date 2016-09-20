@@ -407,7 +407,9 @@ The list of brands available in a given country can be retrieved from the follow
 	    ]
 	}
 
-	Atrribute "variable_amount" is used to diffrenciate the denominations, if it returns True then denominations field will contains variable amounts in diiferent currencies with min and max amount otherwise denominations will be fixed amount.
+	Atrribute "variable_amount" is used to diffrenciate the denominations, if it returns True then 
+	denominations field will contains variable amounts in diiferent currencies with min and max amount
+	otherwise denominations will be fixed amount.
 
 
 
