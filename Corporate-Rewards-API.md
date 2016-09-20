@@ -204,7 +204,7 @@ The list of brands available in a given country can be retrieved from the follow
 
 #### `Brands Catalog API Endpoints`
 - **Endpoint** `https://yougotagift.com/corporate/api/v1/`.
-- **Returns** JSON list of Brands Catalog API endpoints.
+- **Returns** JSON list of brands catalog API endpoints.
 - **Request method**  `GET`.
 - **Request format**  Should be an HTTP GET.
 - **Requires Authentication**
@@ -227,11 +227,41 @@ The list of brands available in a given country can be retrieved from the follow
 
 
 #### `countries`
-- **Endpoint** `https://yougotagift.com/corporate/api/countries/`.
+- **Endpoint** `https://yougotagift.com/corporate/api/v1/countries/`.
 - **Returns** JSON document with the result of the request.
 - **Request method**  `GET`.
 - **Request format**  Should be an HTTP GET.
 - **Requires Authentication**
+
+
+##### Example Request and Response
+
+    GET /corporate/api/v1/countries/ HTTP/1.1
+	Accept: application/json
+	Authorization: Basic "Your Corporate Authentication"
+
+
+    HTTP 200 OK
+    Content-Type: application/json
+
+    {
+	    "count": 1,
+	    "next": null,
+	    "previous": null,
+	    "countries": [
+	        {
+	            "name": "UAE",
+	            "code": "AE",
+	            "currency": {
+	                "name": "UAE Dirham",
+	                "code": "AED"
+	            },
+	            "timezone": "Asia/Dubai",
+	            "mobile_number_format": "+9715xxxxxxxx",
+	            "detail_url": "https://yougotagift.com/corporate/api/v1/countries/1/"
+	        },
+	    ]
+	}
 
 
 
