@@ -191,16 +191,6 @@ JSON document with the following format:
         "message": "Your order has been requested successfully."
     }
 
-### List of YouGotaGift.com Brands in different countries
-The list of brands available in a given country can be retrieved from the following URLs.  The returned text document will be a newline-separated names of the different brands.
-
-- UAE (AE): https://yougotagift.com/gift-card-mall/all-brands/
-- Bahrain (BH): https://yougotagift.com/bahrain/gift-card-mall/all-brands/
-- Lebanon (LB): https://yougotagift.com/lebanon/gift-card-mall/all-brands/
-- Qatar (QA): https://yougotagift.com/qatar/gift-card-mall/all-brands/
-- Saudi (SA): https://yougotagift.com/saudi/gift-card-mall/all-brands/
-- USA (US): https://yougotagift.com/usa/gift-card-mall/all-brands/
-- United Kingdom (UK): https://yougotagift.com/uk/gift-card-mall/all-brands/
 
 #### `Brands Catalog API Endpoints`
 - **Endpoint** `https://yougotagift.com/corporate/api/v1/`.
@@ -439,6 +429,40 @@ The list of brands available in a given country can be retrieved from the follow
 	        {
 	            "name": "Saudi Riyal",
 	            "code": "SAR"
+	        },
+	    ]
+	}
+
+#### `currency conversion rates`
+- **Endpoint** `https://yougotagift.com/corporate/api/v1/currency-conversion-rates/`.
+- **Returns** JSON document with the result of the request.
+- **Request method**  `GET`.
+- **Request format**  Should be an HTTP GET.
+- **Requires Authentication**
+
+
+
+##### Example Request and Response
+
+    GET /corporate/api/v1/currency-conversion-rates/ HTTP/1.1
+	Accept: application/json
+	Authorization: Basic "Your Corporate Authentication"
+
+
+    HTTP 200 OK
+    Content-Type: application/json
+
+    {
+	    "currencies": [
+	        {
+	            "currency_from": "AED",
+	            "currency_to": "EUR",
+	            "conversion_rate": "0.225635"
+	        },
+	        {
+	            "currency_from": "AED",
+	            "currency_to": "GBP",
+	            "conversion_rate": "0.206027"
 	        },
 	    ]
 	}
