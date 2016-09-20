@@ -35,9 +35,12 @@ The YouGotaGift.com Corporate Rewards API is an HTTP API, you can call it with s
 * Authentication is done using HTTP Basic Authentication over TLS secured channel in HTTPS.
 * The HTTP Response Code will tell you whether your call was successful or not.
 * `HTTP 200` Means everything went okay.
+* `HTTP 201` Means Resource created.
 * `HTTP 404` Means the object you were accessing does not exist.
-* `HTTP 400` Means that you have an error in your request, the JSON content will have `errors` field which will explain what is the issue.
-* `HTTP 500` Oops, it's our fault, we'll solve it ASAP.
+* `HTTP 403` Means Forbidden, the requested is hidden for administrators only.
+* `HTTP 405` Means Request Method Not Allowed.
+* `HTTP 400` Bad Request – Inavllid or malformed request, Means that you have an error in your request, the JSON content will have `errors` field which will explain what is the issue.
+* `HTTP 50x` Internal Server Error, something went wrong from server side, we'll resolve it ASAP.
 
 #### `download`
 - **Endpoint** `https://yougotagift.com/corporate/api/incentives-send/download/`
