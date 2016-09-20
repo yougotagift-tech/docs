@@ -412,4 +412,35 @@ The list of brands available in a given country can be retrieved from the follow
 	otherwise denominations will be fixed amount.
 
 
+#### `currencies`
+- **Endpoint** `https://yougotagift.com/corporate/api/v1/currencies/`.
+- **Returns** JSON document with the result of the request.
+- **Request method**  `GET`.
+- **Request format**  Should be an HTTP GET.
+- **Requires Authentication**
+
+
+##### Example Request and Response
+
+    GET /corporate/api/v1/currencies/ HTTP/1.1
+	Accept: application/json
+	Authorization: Basic "Your Corporate Authentication"
+
+
+    HTTP 200 OK
+    Content-Type: application/json
+
+    {
+	    "currencies": [
+	        {
+	            "name": "UAE Dirham",
+	            "code": "AED"
+	        },
+	        {
+	            "name": "Saudi Riyal",
+	            "code": "SAR"
+	        },
+	    ]
+	}
+
 
