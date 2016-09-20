@@ -402,8 +402,8 @@ JSON document with the following format:
 	    ]
 	}
 
-	Atrribute "variable_amount" is used to diffrenciate the denominations, if it returns True then 
-	denominations field will contains variable amounts in diiferent currencies with min and max amount
+	Atrribute "variable_amount" is used to differentiate the denominations, if it returns True then 
+	denominations field will contains variable amounts in different currencies with min and max amount
 	otherwise denominations will be fixed amount.
 
 
