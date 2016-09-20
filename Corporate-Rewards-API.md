@@ -210,6 +210,21 @@ The list of brands available in a given country can be retrieved from the follow
 - **Requires Authentication**
 
 
+##### Example Request and Response
+
+	GET /corporate/api/v1/
+
+    HTTP/1.0 200 OK
+    Content-Type: application/json
+
+    {
+	    "brands": "https://yougotagift.com/corporate/api/v1/brands/",
+	    "countries": "https://yougotagift.com/corporate/api/v1/countries/",
+	    "currencies": "https://yougotagift.com/corporate/api/v1/currencies/",
+	    "currency-conversion-rates": "https://yougotagift.com/corporate/api/v1/currency-conversion-rates/"
+	}
+
+
 
 #### `countries`
 - **Endpoint** `https://yougotagift.com/corporate/api/countries/`.
@@ -218,18 +233,6 @@ The list of brands available in a given country can be retrieved from the follow
 - **Request format**  Should be an HTTP GET.
 - **Requires Authentication**
 
-##### Country Object
-
-
-| Attribute    | Description   |
-| ------------ | ------------- |
-| name | Country name  |
-| code | Two letter country code Example: AE, LB, SA |
-| currency:
-        name | name of the currency 
-        code | Two letter currency code
-| timezone | Country timezone
-| detail_url | Endpoint url for specific country. |
 
 
 
