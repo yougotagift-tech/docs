@@ -360,6 +360,7 @@ JSON document with the following format:
 	            "redemption_type": "Redeem at Store",
 	            "redemption_instruction": "This eGift Card is redeemable for any service offered in any 1847 branch across the UAE.\r\nThis eGift Card is only valid for a one time purchase to the full value unless otherwise specified.",
 	            "detail_url": "https://yougotagift.com/corporate/api/v1/brands/26/"
+		    "locations": "https://yougotagift.com/corporate/api/v1/brands/26/locations/"
 	        },
 	        {
 	            "id": 117,
@@ -397,6 +398,7 @@ JSON document with the following format:
 	            "redemption_type": "Redeem at Store",
 	            "redemption_instruction": "This eGift Card is redeemable for any merchandise offered in ABC outlets across Lebanon.\r\nThis eGift Card is only valid for a one time purchase to the full value unless otherwise specified\r\n",
 	            "detail_url": "https://yougotagift.com/corporate/api/v1/brands/117/"
+		    "locations": "https://yougotagift.com/corporate/api/v1/brands/117/locations/"
 	        },
 	        
 	    ]
