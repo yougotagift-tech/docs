@@ -359,7 +359,7 @@ JSON document with the following format:
 	            ],
 	            "redemption_type": "Redeem at Store",
 	            "redemption_instruction": "This eGift Card is redeemable for any service offered in any 1847 branch across the UAE.\r\nThis eGift Card is only valid for a one time purchase to the full value unless otherwise specified.",
-	            "detail_url": "https://yougotagift.com/corporate/api/v1/brands/26/"
+	            "detail_url": "https://yougotagift.com/corporate/api/v1/brands/26/",
 		    "locations": "https://yougotagift.com/corporate/api/v1/brands/26/locations/"
 	        },
 	        {
@@ -397,7 +397,7 @@ JSON document with the following format:
 	            ],
 	            "redemption_type": "Redeem at Store",
 	            "redemption_instruction": "This eGift Card is redeemable for any merchandise offered in ABC outlets across Lebanon.\r\nThis eGift Card is only valid for a one time purchase to the full value unless otherwise specified\r\n",
-	            "detail_url": "https://yougotagift.com/corporate/api/v1/brands/117/"
+	            "detail_url": "https://yougotagift.com/corporate/api/v1/brands/117/",
 		    "locations": "https://yougotagift.com/corporate/api/v1/brands/117/locations/"
 	        },
 	        
@@ -407,7 +407,48 @@ JSON document with the following format:
 	Atrribute "variable_amount" is used to differentiate the denominations, if it returns True then 
 	denominations field will contains variable amounts in different currencies with min and max amount
 	otherwise denominations will be fixed amount.
+	
+	
+##### Brand locations Sample Request and Response
 
+    GET /corporate/api/v1/brands/26/locations/ HTTP/1.1
+	Accept: application/json
+	Authorization: Basic "Your Corporate Authentication"
+
+
+    HTTP 200 OK
+    Content-Type: application/json
+
+    {
+	    "brand": "1847",
+	    "store_locations": [
+	        {
+	            "city": "Dubai",
+	            "locations": [
+	                {
+	                    "phone": "04 330 1847",
+	                    "name": "Emirates Towers Boulevard"
+	                },
+	                {
+	                    "phone": "04 399 8989",
+	                    "name": "Grosvenor House Hotel"
+	                },
+	                {
+	                    "phone": "04 422 1847",
+	                    "name": "JBR The Walk"
+	                },
+	                {
+	                    "phone": "04 236 2020",
+	                    "name": "Mirdif City Centre"
+	                },
+	                {
+	                    "phone": "04 344 3363",
+	                    "name": "City Walk"
+	                }
+	            ]
+	        }
+	    ]
+	}
 
 #### `currencies`
 - **Endpoint** `https://yougotagift.com/corporate/api/v1/currencies/`.
