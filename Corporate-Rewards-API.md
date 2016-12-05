@@ -67,6 +67,7 @@ JSON document with the following format:
           'amount_in_currency': 5,
           'barcode_image': 'https://yougotagift.com/gifts/barcode/generate/hPc7bN/',
           'brand': 'Walmart',
+	  'brand_accepted_amount': {u'amount': 1.36, u'currency': u'USD'},
           'brand_print_image': 'https://yougotagift.com/media/images/cards/print/Walmart-print-495x318.png',
           'brand_square_image': 'https://yougotagift.com/media/images/cards/fb/Walmart-FB-300x300.png',
           'brand_store_image': 'https://yougotagift.com/media/images/cards/store/Walmart-262x168.jpg',
@@ -111,6 +112,7 @@ JSON document with the following format:
           'amount_in_currency': 50.0,
           'barcode_image': 'https://yougotagift.com/gifts/barcode/generate/XXXXXXXXXX/',
           'brand': 'Virgin Megastore',
+	  'brand_accepted_amount': {u'amount': 50.0, u'currency': u'AED'},
           'brand_print_image': 'https://yougotagift.com/media/images/cards/print/virgin-print_2_2.png',
           'brand_square_image': 'https://yougotagift.com/media/images/cards/fb/virgin-196x196_2_4.jpg',
           'brand_store_image': 'https://yougotagift.com/media/images/cards/store/virgin-262x168_2_2.jpg',
@@ -337,6 +339,7 @@ JSON document with the following format:
 	            },
 	            "tagline": "Executive grooming for men",
 	            "description": "Where are all the luxury facilities and treatments for men? They are all at the Grooming Company’s 1847 in Dubai, exclusively for men to get away and relax! Men will go through an experience which starts with unwinding in the signature Chill Out Lounge with custom made Italian leather chairs, followed by selecting a channel or DVD of their choice while enjoying several treatments, massages, and even a facial!<!--more-->\r\n\r\nMen love good grooming just as much as women, so why not get them an 1847 eGift Card?! Give the man of your choice an experience they will never forget. First, they will enter the signature “Chill Out” Lounge, where they can select from different sports and news channels on the 42 inch plasma screen.  They can also choose from a range of gourmet sandwiches and drinks.\r\n\r\nNext, they can enjoy a selection of different treatments this modern day barber shop has to offer. Your loved one can have a manicure pedicure as well as a range of massages such as the Well Being Massage, Ancient Thai Massage, Reflexology, or 1847’s signature “Four Hands” massage.\r\n\r\nLast but not least, men can use their eGift Card to purchase products from “The Mint” boutique where they can choose from a range of skin care items, shaving kits, and hair treatments. When it comes to male pampering, choose the 1847 gift card.",
+		    "brand_accepted_currency": "AED",
 	            "image_gallery": [
 	                {
 	                    "image": "https://yougotagift.com/media/images/cards/gallery/2pmq2WHMZ0oaJIlTwaIHpQ.jpg"
@@ -363,43 +366,47 @@ JSON document with the following format:
 		    "locations": "https://yougotagift.com/corporate/api/v1/brands/26/locations/"
 	        },
 	        {
-	            "id": 117,
-	            "brand_code": "ABC",
-	            "name": "ABC",
-	            "logo": "https://yougotagift.com/media/images/cards/fb/ABC-FB-300x300.png",
-	            "product_image": "https://yougotagift.com/media/images/cards/mail/ABC-372x238.jpg",
-	            "country": {
-	                "name": "Lebanon",
-	                "code": "LB"
-	            },
-	            "validity_in_months": 12,
-	            "variable_amount": false,
-	            "denominations": {
-	                "LBP": [
-	                    75000,
-	                    100000,
-	                    150000,
-	                    225000,
-	                    300000,
-	                    750000,
-	                    1500000
-	                ]
-	            },
-	            "tagline": "My gift your choice",
-	            "description": "Want to spoil your loved ones with the ultimate gift of choice? Welcome to ABC, home of all that is vibrant, stylish, new and exciting! ABC is the most prominent mall in Lebanon that offers a unique shopping, dining, leisure and entertainment experience like no other. ABC provides a multitude of top store options to choose from in fashion, beauty, electronics, home décor, food shopping and more! \r\n\r\nAs Lebanon’s premier shopping and lifestyle destination, ABC is still first and as committed as ever to upholding the tradition of excellence that has made it what it is today. With six branches, including two flagship stores that combine world-class shopping, dining and entertainment, this dynamic retailer is perpetually reinventing the ultimate leisure experience. From Zara to H&M, M2 Multimedia Megastore to The Body Shop and ABC Grand Cinemas, your loved ones are bound to find the perfect gift!\r\n\r\nThis Gift Card is ideal for those who are hard to shop for and perfect for when you just want to surprise a loved one to purchase what they really want, as it takes the guess work out of gift shopping! Who wouldn't be happy to go on a shopping spree?\r\n\r\nYou can even customize your Gift Card to make it extra special with a greeting, message and photo! So whether you are looking to gift a loved one on their birthday, for a house warming, graduation, or just looking to say “thank-you,” they will surely appreciate an ABC Gift Card!",
-	            "image_gallery": [
-	                {
-	                    "image": "https://yougotagift.com/media/images/cards/gallery/26txWWbCpeephNKuE1jsib.jpg"
-	                },
-	                {
-	                    "image": "https://yougotagift.com/media/images/cards/gallery/3fzDLrxIxadWoBwExCq6EH.jpg"
-	                }
-	            ],
-	            "redemption_type": "Redeem at Store",
-	            "redemption_instruction": "This eGift Card is redeemable for any merchandise offered in ABC outlets across Lebanon.\r\nThis eGift Card is only valid for a one time purchase to the full value unless otherwise specified\r\n",
-	            "detail_url": "https://yougotagift.com/corporate/api/v1/brands/117/",
-		    "locations": "https://yougotagift.com/corporate/api/v1/brands/117/locations/"
-	        },
+            "id": 240,
+            "brand_code": "ITUNEAE",
+            "name": "iTunes UAE Gift Card",
+            "logo": "https://yougotagift.com/media/images/cards/fb/iTunes-FB-300x300_1_1_HOpeDzG.png",
+            "product_image": "https://yougotagift.com/media/images/cards/mail/iTunes-1016x650_1_jndOEh5.png",
+            "country": {
+                "name": "UAE",
+                "code": "AE"
+            },
+            "validity_in_months": 12,
+            "variable_amount": false,
+            "denominations": {
+                "AED": [
+                    50,
+                    100,
+                    250,
+                    500
+                ]
+            },
+            "tagline": "Music, Movies & Games",
+            "description": "Are you looking for a special gift for a lover of music? Well, you can officially stop looking because the ITunes Gift Card is available for all the music lovers! When you give them the ITunes and Apple Music eGift card, you are allowing them to choose from a long list of albums, songs and applications from the ITunes Store. \r\n\r\nWith this gift card, your loved ones will be able to put the songs in their head into their libraries and just come back to listen to them whenever and wherever they want. They can play their favorite songs at home, at work, in the car and at the gym. The ITunes UAE gift cards keeps your loved one up to date with all the latest music and albums, making sure they never go out of music style. \r\n\r\nMusic is not the only option with ITunes gift cards; owners of these cards can download their favorite movies and television shows. Whether they want to watch a documentary, a romantic comedy or even a classic, ITunes has got all their movie needs covered. The best part is that, after they have purchased the movie, it will be there for a very long time and can be watched over and over again, whenever they please. \r\n\r\nThat’s not all! ITunes UAE gifts even let the receiver download the best applications available on the platform. They can download the UAE Cinema app, for example, and keep themselves updated on all the new movie releases. Other fun applications include Afterlight for photo editing, English Study Box to improve their language skills and Heads Up for a fun time with friends. These are only some of the options available to holders of the ITunes gift card!\r\n\r\nSo, if you are looking for a unique and special gift for a friend, a relative or colleague who loves music, movies and applications, then you have found it right here. From top music to top movies, it is all available on this platform. ITunes will make their lives happier and filled with music and laughter. \r\n\r\nIf you would like to see more options on <a href=\"https://yougotagift.com/gift-card-mall/music-movies-games/\" class=\"plink\">music, movies & games</a> or <a href=\"https://yougotagift.com/gift-card-mall/electronics/\" class=\"plink\">electronics</a> check out our list in the categories.",
+            "brand_accepted_currency": "AED",
+            "image_gallery": [
+                {
+                    "image": "https://yougotagift.com/media/images/cards/gallery/F1JLMeKtaOEiUhx5H4OQ2.jpg"
+                },
+                {
+                    "image": "https://yougotagift.com/media/images/cards/gallery/1PNkXMAaxcoa7mBDKc4ylM.jpg"
+                },
+                {
+                    "image": "https://yougotagift.com/media/images/cards/gallery/1GQ_Yzu0Z99VjL-MvOT-eX.jpg"
+                },
+                {
+                    "image": "https://yougotagift.com/media/images/cards/gallery/3w0ntq7AR5V83jz3o7NIbj.jpg"
+                }
+            ],
+            "redemption_type": "Redeem Online",
+            "redemption_instruction": "This eGift Card is redeemable for iTunes UAE Store only.\r\nRedeem your iTunes Code for music, movies, TV shows, games, apps, books, and more on the iTunes UAE Store, the App Store, the iBooks Store, or the Mac App Store.\r\nOpen iTunes Store & Scroll to bottom and click or tap Redeem.\r\nEnter the digit code shown above.\r\nDownload iTunes® for Mac or Windows, free of charge, at www.apple.com/ae/itunes/",
+            "detail_url": "https://yougotagift.com/corporate/api/v1/brands/240/",
+            "locations": null
+        },
 	        
 	    ]
 	}
@@ -407,6 +414,8 @@ JSON document with the following format:
 	Atrribute "variable_amount" is used to differentiate the denominations, if it returns True then 
 	denominations field will contains variable amounts in different currencies with min and max amount
 	otherwise denominations will be fixed amount.
+	
+	Attribute "locations" will contain the url of brand locations, Note: for some brands this attribute will be empty
 	
 	
 ##### Brand locations Sample Request and Response
@@ -449,6 +458,39 @@ JSON document with the following format:
 	        }
 	    ]
 	}
+	
+	{
+    "brand": "Apparel Gift Card",
+    "retailers": [
+        "Anne Klein",
+        "Aldo",
+        "Athlete's Co.",
+        "Birkenstock",
+        "Call It Spring",
+        "CHARLES & KEITH",
+        "Dune",
+        "Easy Spirit",
+        "MBT",
+        "Moreschi",
+        "Naturalizer",
+        "New Balance",
+        "Nine West",
+        "Pedro",
+        "Shoe Gallery",
+        "Shoe Studio",
+        "Skechers",
+        "TOMS",
+        "All About Watches",
+        "Aldo Accessories",
+        "Charming Charlie",
+        "Ice Watch",
+        "Ninewest Accessories",
+        "Booksplus",
+        "The Children's Place",
+        "Tommy Hilfiger",
+        "Z generation"
+    ]
+}
 
 #### `currencies`
 - **Endpoint** `https://yougotagift.com/corporate/api/v1/currencies/`.
