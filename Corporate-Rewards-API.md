@@ -109,7 +109,7 @@ JSON document with the following format:
     {
       'gift_json': {
           'amount': 50.0,
-          'amount_in_currency': 50.0,
+          'amount_in_currency': 50,
           'barcode_image': 'https://yougotagift.com/gifts/barcode/generate/XXXXXXXXXX/',
           'brand': 'Virgin Megastore',
 	      'brand_accepted_amount': {u'amount': 50.0, u'currency': u'AED'},
