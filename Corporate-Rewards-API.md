@@ -108,11 +108,11 @@ JSON document with the following format:
 
     {
       'gift_json': {
-          'amount': 50.0,
+          'amount': 50,
           'amount_in_currency': 50,
           'barcode_image': 'https://yougotagift.com/gifts/barcode/generate/XXXXXXXXXX/',
           'brand': 'Virgin Megastore',
-	      'brand_accepted_amount': {u'amount': 50.0, u'currency': u'AED'},
+	      'brand_accepted_amount': {u'amount': 50, u'currency': u'AED'},
           'brand_print_image': 'https://yougotagift.com/media/images/cards/print/virgin-print_2_2.png',
           'brand_square_image': 'https://yougotagift.com/media/images/cards/fb/virgin-196x196_2_4.jpg',
           'brand_store_image': 'https://yougotagift.com/media/images/cards/store/virgin-262x168_2_2.jpg',
