@@ -197,9 +197,9 @@ JSON document with the following format:
     }
 
 
-#### `Brands Catalog REST API `
+#### `Brands catalogue REST API `
 - **Endpoint** `https://yougotagift.com/corporate/api/v1/`.
-- **Returns** JSON list of brands catalog API endpoints.
+- **Returns** JSON list of brands catalogue API endpoints.
 - **Request method**  `GET`.
 - **Request format**  Should be an HTTP GET.
 - **Requires Authentication**
