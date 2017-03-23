@@ -29,7 +29,7 @@ Added support for international brands which requires additional details for red
 The YouGotaGift.com Corporate Rewards API is an HTTP API, you can call it with simple HTTP GET/POST, and the result will be in JSON.
 
 ### API Endpoints
-* All the following API endpoints are available under `https://sanbox.yougotagift.com/corporate/api/`.
+* All the following API endpoints are available under `https://sandbox.yougotagift.com/corporate/api/`.
 * All the API points return JSON responses.
 * All the API points are callable using HTTP methods, some will only accept `GET` requests, some will only accept `POST` requests, and some will accept both.
 * Authentication is done using HTTP Basic Authentication over TLS secured channel in HTTPS.
