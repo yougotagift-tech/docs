@@ -29,7 +29,7 @@ Added support for international brands which requires additional details for red
 The YouGotaGift.com Corporate Rewards API is an HTTP API, you can call it with simple HTTP GET/POST, and the result will be in JSON.
 
 ### API Endpoints
-* All the following API endpoints are available under `https://yougotagift.com/corporate/api/`.
+* All the following API endpoints are available under `https://sanbox.yougotagift.com/corporate/api/`.
 * All the API points return JSON responses.
 * All the API points are callable using HTTP methods, some will only accept `GET` requests, some will only accept `POST` requests, and some will accept both.
 * Authentication is done using HTTP Basic Authentication over TLS secured channel in HTTPS.
@@ -43,7 +43,7 @@ The YouGotaGift.com Corporate Rewards API is an HTTP API, you can call it with s
 * `HTTP 50x` Internal Server Error, something went wrong from server side, we'll resolve it ASAP.
 
 #### `download`
-- **Endpoint** `https://yougotagift.com/corporate/api/incentives-send/download/`
+- **Endpoint** `https://sandbox.yougotagift.com/corporate/api/incentives-send/download/`
 - **Returns** JSON Object with the result of your request
 - **Accepts** `POST` only.
 - **Request format** Should be an HTTP POST with a JSON array in the body of JSON objects for gifts requested.
@@ -53,7 +53,7 @@ The YouGotaGift.com Corporate Rewards API is an HTTP API, you can call it with s
 
 | Parameter    | Description   |
 | ------------ | ------------- |
-| brand | Brand name.  **Required**.  Up-to-date brand names list can be found at https://yougotagift.com/corporate/api/v1/brands/ to access other countries lists check the end of this file. |
+| brand | Brand name.  **Required**.  Up-to-date brand names list can be found at https://sandbox.yougotagift.com/corporate/api/v1/brands/ to access other countries lists check the end of this file. |
 | country | The brand's country.  Possible values: `AE`, `LB`, `SA`, `QA`, `BH`, `UK`, `US`. _Optional_. Defaults to `AE`. |
 | amount | Amount in the given currency.  **Required**. |
 | currency | Order currency.  Possible values: `AED`, `USD`, `QAR`, `SAR`, `EUR`, `GBP`, `BHD`.  _Optional_.  Defaults to `AED`. |
@@ -65,17 +65,17 @@ JSON document with the following format:
       'gift_json': {
           'amount': 5,
           'amount_in_currency': 5,
-          'barcode_image': 'https://yougotagift.com/gifts/barcode/generate/hPc7bN/',
+          'barcode_image': 'https://sandbox.yougotagift.com/gifts/barcode/generate/hPc7bN/',
           'brand': 'Walmart',
 	      'brand_accepted_amount': {u'amount': 1.36, u'currency': u'USD'},
-          'brand_print_image': 'https://yougotagift.com/media/images/cards/print/Walmart-print-495x318.png',
-          'brand_square_image': 'https://yougotagift.com/media/images/cards/fb/Walmart-FB-300x300.png',
-          'brand_store_image': 'https://yougotagift.com/media/images/cards/store/Walmart-262x168.jpg',
+          'brand_print_image': 'https://sandbox.yougotagift.com/media/images/cards/print/Walmart-print-495x318.png',
+          'brand_square_image': 'https://sandbox.yougotagift.com/media/images/cards/fb/Walmart-FB-300x300.png',
+          'brand_store_image': 'https://sandbox.yougotagift.com/media/images/cards/store/Walmart-262x168.jpg',
           'country': 'US',
           'currency': 'USD',
           'expiry_date': '2017-07-31',
           'extra_fields': '',
-          'gift_pdf_link': 'https://yougotagift.com/usa/gifts/95370/1BZnu0hn-qPtTg9HcVVX2keDTm71-KlOa/pdf/',
+          'gift_pdf_link': 'https://sandbox.yougotagift.com/usa/gifts/95370/1BZnu0hn-qPtTg9HcVVX2keDTm71-KlOa/pdf/',
           'gift_voucher': {
                 'code': XXXX,
                 'url': 'http://gotagift.co/XXXX',
@@ -110,17 +110,17 @@ JSON document with the following format:
       'gift_json': {
           'amount': 50,
           'amount_in_currency': 50,
-          'barcode_image': 'https://yougotagift.com/gifts/barcode/generate/XXXXXXXXXX/',
+          'barcode_image': 'https://sandbox.yougotagift.com/gifts/barcode/generate/XXXXXXXXXX/',
           'brand': 'Virgin Megastore',
 	      'brand_accepted_amount': {u'amount': 50, u'currency': u'AED'},
-          'brand_print_image': 'https://yougotagift.com/media/images/cards/print/virgin-print_2_2.png',
-          'brand_square_image': 'https://yougotagift.com/media/images/cards/fb/virgin-196x196_2_4.jpg',
-          'brand_store_image': 'https://yougotagift.com/media/images/cards/store/virgin-262x168_2_2.jpg',
+          'brand_print_image': 'https://sandbox.yougotagift.com/media/images/cards/print/virgin-print_2_2.png',
+          'brand_square_image': 'https://sandbox.yougotagift.com/media/images/cards/fb/virgin-196x196_2_4.jpg',
+          'brand_store_image': 'https://sandbox.yougotagift.com/media/images/cards/store/virgin-262x168_2_2.jpg',
           'country': 'AE',
           'currency': 'AED',
           'expiry_date': '2017-07-31',
           'extra_fields': '',
-          'gift_pdf_link': 'https://yougotagift.com/gifts/XXXXX/acymcSBBn3QrP4fCAz5V1ncT067JRiic/pdf/',
+          'gift_pdf_link': 'https://sandbox.yougotagift.com/gifts/XXXXX/acymcSBBn3QrP4fCAz5V1ncT067JRiic/pdf/',
           'gift_voucher': {
                 'code': 'XXXXXXXXXX'
             },
@@ -133,7 +133,7 @@ JSON document with the following format:
 
 
 #### `send`
-- **Endpoint** `https://yougotagift.com/corporate/api/incentives-send/send/`.
+- **Endpoint** `https://sandbox.yougotagift.com/corporate/api/incentives-send/send/`.
 - **Returns** JSON document with the result of the request.
 - **Request method**  `POST`.
 - **Request format**  Should be an HTTP POST with a JSON array in the body of JSON objects for gifts requested.
@@ -143,7 +143,7 @@ JSON document with the following format:
 
 | Parameter    | Description   |
 | ------------ | ------------- |
-| brand | Brand name **Required** (Up-to-date brand names list can be found at https://yougotagift.com/corporate/api/v1/brands/ to access other countries lists check the end of this file) |
+| brand | Brand name **Required** (Up-to-date brand names list can be found at https://sandbox.yougotagift.com/corporate/api/v1/brands/ to access other countries lists check the end of this file) |
 | country | The brand's country. Possible values: AE, LB, SA, QA, BH, UK, US. _Optional Default AE_ |
 | amount | Amount in the given currency. **Required** |
 | currency | Order currency. Possible values: AED, USD, QAR, SAR, EUR, GBP, BHD _Optional Default AED_ |
@@ -198,7 +198,7 @@ JSON document with the following format:
 
 
 #### `Brands catalogue REST API `
-- **Endpoint** `https://yougotagift.com/corporate/api/v1/`.
+- **Endpoint** `https://sandbox.yougotagift.com/corporate/api/v1/`.
 - **Returns** JSON list of brands catalogue API endpoints.
 - **Request method**  `GET`.
 - **Request format**  Should be an HTTP GET.
@@ -215,16 +215,16 @@ JSON document with the following format:
     Content-Type: application/json
 
     {
-	    "brands": "https://yougotagift.com/corporate/api/v1/brands/",
-	    "countries": "https://yougotagift.com/corporate/api/v1/countries/",
-	    "currencies": "https://yougotagift.com/corporate/api/v1/currencies/",
-	    "currency-conversion-rates": "https://yougotagift.com/corporate/api/v1/currency-conversion-rates/"
+	    "brands": "https://sandbox.yougotagift.com/corporate/api/v1/brands/",
+	    "countries": "https://sandbox.yougotagift.com/corporate/api/v1/countries/",
+	    "currencies": "https://sandbox.yougotagift.com/corporate/api/v1/currencies/",
+	    "currency-conversion-rates": "https://sandbox.yougotagift.com/corporate/api/v1/currency-conversion-rates/"
 	}
 
 
 
 #### `countries`
-- **Endpoint** `https://yougotagift.com/corporate/api/v1/countries/`.
+- **Endpoint** `https://sandbox.yougotagift.com/corporate/api/v1/countries/`.
 - **Returns** JSON document with the result of the request.
 - **Request method**  `GET`.
 - **Request format**  Should be an HTTP GET.
@@ -255,14 +255,14 @@ JSON document with the following format:
 	            },
 	            "timezone": "Asia/Dubai",
 	            "mobile_number_format": "+9715xxxxxxxx",
-	            "detail_url": "https://yougotagift.com/corporate/api/v1/countries/1/"
+	            "detail_url": "https://sandbox.yougotagift.com/corporate/api/v1/countries/1/"
 	        },
 	    ]
 	}
 
 
 #### `brands`
-- **Endpoint** `https://yougotagift.com/corporate/api/v1/brands/`.
+- **Endpoint** `https://sandbox.yougotagift.com/corporate/api/v1/brands/`.
 - **Returns** JSON document with the result of the request.
 - **Request method**  `GET`.
 - **Request format**  Should be an HTTP GET.
@@ -288,15 +288,15 @@ JSON document with the following format:
 
     {
 	    "count": 162,
-	    "next": "https://yougotagift.com/corporate/api/v1/brands/?page=2",
+	    "next": "https://sandbox.yougotagift.com/corporate/api/v1/brands/?page=2",
 	    "previous": null,
 	    "brands": [
 	        {
 	            "id": 26,
 	            "brand_code": "1847",
 	            "name": "1847",
-	            "logo": "https://yougotagift.com/media/images/cards/fb/1847-FB-196x196.jpg",
-	            "product_image": "https://yougotagift.com/media/images/cards/mail/1847-372x238.jpg",
+	            "logo": "https://sandbox.yougotagift.com/media/images/cards/fb/1847-FB-196x196.jpg",
+	            "product_image": "https://sandbox.yougotagift.com/media/images/cards/mail/1847-372x238.jpg",
 	            "country": {
 	                "name": "UAE",
 	                "code": "AE"
@@ -342,35 +342,35 @@ JSON document with the following format:
 		     "brand_accepted_currency": "AED",
 	            "image_gallery": [
 	                {
-	                    "image": "https://yougotagift.com/media/images/cards/gallery/2pmq2WHMZ0oaJIlTwaIHpQ.jpg"
+	                    "image": "https://sandbox.yougotagift.com/media/images/cards/gallery/2pmq2WHMZ0oaJIlTwaIHpQ.jpg"
 	                },
 	                {
-	                    "image": "https://yougotagift.com/media/images/cards/gallery/10g7Kv4tV9Jo1OzUO_FhuF.jpg"
+	                    "image": "https://sandbox.yougotagift.com/media/images/cards/gallery/10g7Kv4tV9Jo1OzUO_FhuF.jpg"
 	                },
 	                {
-	                    "image": "https://yougotagift.com/media/images/cards/gallery/1hj4Rmt7J9cpu_poxVeFEi.jpg"
+	                    "image": "https://sandbox.yougotagift.com/media/images/cards/gallery/1hj4Rmt7J9cpu_poxVeFEi.jpg"
 	                },
 	                {
-	                    "image": "https://yougotagift.com/media/images/cards/gallery/1jFwM5hrp6hatV7uva7q-p.jpg"
+	                    "image": "https://sandbox.yougotagift.com/media/images/cards/gallery/1jFwM5hrp6hatV7uva7q-p.jpg"
 	                },
 	                {
-	                    "image": "https://yougotagift.com/media/images/cards/gallery/3cP1ssTYB9to73qV1t1jGT.jpg"
+	                    "image": "https://sandbox.yougotagift.com/media/images/cards/gallery/3cP1ssTYB9to73qV1t1jGT.jpg"
 	                },
 	                {
-	                    "image": "https://yougotagift.com/media/images/cards/gallery/1l3FvnCoZdmGyzxyE2OOG-.jpg"
+	                    "image": "https://sandbox.yougotagift.com/media/images/cards/gallery/1l3FvnCoZdmGyzxyE2OOG-.jpg"
 	                }
 	            ],
 	            "redemption_type": "Redeem at Store",
 	            "redemption_instruction": "This eGift Card is redeemable for any service offered in any 1847 branch across the UAE.\r\nThis eGift Card is only valid for a one time purchase to the full value unless otherwise specified.",
-	            "detail_url": "https://yougotagift.com/corporate/api/v1/brands/26/",
-		    "locations": "https://yougotagift.com/corporate/api/v1/brands/26/locations/"
+	            "detail_url": "https://sandbox.yougotagift.com/corporate/api/v1/brands/26/",
+		    "locations": "https://sandbox.yougotagift.com/corporate/api/v1/brands/26/locations/"
 	        },
 	        {
             "id": 240,
             "brand_code": "ITUNEAE",
             "name": "iTunes UAE Gift Card",
-            "logo": "https://yougotagift.com/media/images/cards/fb/iTunes-FB-300x300_1_1_HOpeDzG.png",
-            "product_image": "https://yougotagift.com/media/images/cards/mail/iTunes-1016x650_1_jndOEh5.png",
+            "logo": "https://sandbox.yougotagift.com/media/images/cards/fb/iTunes-FB-300x300_1_1_HOpeDzG.png",
+            "product_image": "https://sandbox.yougotagift.com/media/images/cards/mail/iTunes-1016x650_1_jndOEh5.png",
             "country": {
                 "name": "UAE",
                 "code": "AE"
@@ -390,21 +390,21 @@ JSON document with the following format:
              "brand_accepted_currency": "AED",
             "image_gallery": [
                 {
-                    "image": "https://yougotagift.com/media/images/cards/gallery/F1JLMeKtaOEiUhx5H4OQ2.jpg"
+                    "image": "https://sandbox.yougotagift.com/media/images/cards/gallery/F1JLMeKtaOEiUhx5H4OQ2.jpg"
                 },
                 {
-                    "image": "https://yougotagift.com/media/images/cards/gallery/1PNkXMAaxcoa7mBDKc4ylM.jpg"
+                    "image": "https://sandbox.yougotagift.com/media/images/cards/gallery/1PNkXMAaxcoa7mBDKc4ylM.jpg"
                 },
                 {
-                    "image": "https://yougotagift.com/media/images/cards/gallery/1GQ_Yzu0Z99VjL-MvOT-eX.jpg"
+                    "image": "https://sandbox.yougotagift.com/media/images/cards/gallery/1GQ_Yzu0Z99VjL-MvOT-eX.jpg"
                 },
                 {
-                    "image": "https://yougotagift.com/media/images/cards/gallery/3w0ntq7AR5V83jz3o7NIbj.jpg"
+                    "image": "https://sandbox.yougotagift.com/media/images/cards/gallery/3w0ntq7AR5V83jz3o7NIbj.jpg"
                 }
             ],
             "redemption_type": "Redeem Online",
             "redemption_instruction": "This eGift Card is redeemable for iTunes UAE Store only.\r\nRedeem your iTunes Code for music, movies, TV shows, games, apps, books, and more on the iTunes UAE Store, the App Store, the iBooks Store, or the Mac App Store.\r\nOpen iTunes Store & Scroll to bottom and click or tap Redeem.\r\nEnter the digit code shown above.\r\nDownload iTunes® for Mac or Windows, free of charge, at www.apple.com/ae/itunes/",
-            "detail_url": "https://yougotagift.com/corporate/api/v1/brands/240/",
+            "detail_url": "https://sandbox.yougotagift.com/corporate/api/v1/brands/240/",
             "locations": null
         },
 	        
@@ -493,7 +493,7 @@ JSON document with the following format:
 }
 
 #### `currencies`
-- **Endpoint** `https://yougotagift.com/corporate/api/v1/currencies/`.
+- **Endpoint** `https://sandbox.yougotagift.com/corporate/api/v1/currencies/`.
 - **Returns** JSON document with the result of the request.
 - **Request method**  `GET`.
 - **Request format**  Should be an HTTP GET.
@@ -524,7 +524,7 @@ JSON document with the following format:
 	}
 
 #### `currency conversion rates`
-- **Endpoint** `https://yougotagift.com/corporate/api/v1/currency-conversion-rates/`.
+- **Endpoint** `https://sandbox.yougotagift.com/corporate/api/v1/currency-conversion-rates/`.
 - **Returns** JSON document with the result of the request.
 - **Request method**  `GET`.
 - **Request format**  Should be an HTTP GET.
