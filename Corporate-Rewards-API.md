@@ -36,6 +36,7 @@ The YouGotaGift.com Corporate Rewards API is an HTTP API, you can call it with s
 * The HTTP Response Code will tell you whether your call was successful or not.
 * `HTTP 200` Means everything went okay.
 * `HTTP 201` Means Resource created.
+* `HTTP 401` Means Unauthorized, The request requires user authentication.
 * `HTTP 404` Means the object you were accessing does not exist.
 * `HTTP 403` Means Forbidden, the requested is hidden for administrators only.
 * `HTTP 405` Means Request Method Not Allowed.
