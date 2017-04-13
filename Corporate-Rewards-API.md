@@ -91,7 +91,7 @@ JSON document with the following format:
 #### Example Request and Response
 
     POST /corporate/api/incentives-send/download/ HTTP/1.1
-    Host: yougotagift.com
+    Host: sandbox.yougotagift.com
     Connection: keep-alive
     Content-Length: 155
     Authorization: Basic Y29ycG9yYXRlLXNhbmRib3g6c2FuZGJveA==
@@ -168,7 +168,7 @@ JSON document with the following format:
 ##### Example Request and Response
 
     POST /corporate/api/incentives-send/send/ HTTP/1.1
-    Host: yougotagift.com
+    Host: sandbox.yougotagift.com
     Connection: keep-alive
     Content-Length: 155
     Authorization: Basic XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
