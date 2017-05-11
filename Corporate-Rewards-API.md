@@ -90,7 +90,7 @@ JSON document with the following format:
           'redemption_details': 'To redeem your Walmart eGift Card, please click on the Redemption URL above and enter the above Challenge Key into the website.'
         },
       'message': 'Your order has been requested successfully.',
-      'purchase_request_id': 13544
+          'purchase_request_id': 13544
     }
 
 #### Example Request and Response
